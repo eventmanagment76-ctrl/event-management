@@ -1,0 +1,489 @@
+/* Conference.css */
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#ece8e8;
+  overflow-x:hidden;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.conference-section{
+  width:100%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #1c1414 0%,
+    #09050f 35%,
+    #1d1d1d 70%,
+    #2e1901 100%
+  );
+
+  padding-bottom:45px;
+}
+
+/* =========================
+   TOP WHITE HEADER AREA
+========================= */
+
+.conference-heading{
+  width:100%;
+  background:#fff;
+
+  text-align:center;
+
+  padding:26px 20px 30px;
+  margin-bottom:35px;
+}
+
+.conference-heading span{
+  display:block;
+
+  color:#070606;
+
+  font-size:13px;
+  font-weight:700;
+
+  letter-spacing:3px;
+
+  margin-bottom:12px;
+}
+
+.conference-heading h1{
+  font-size:42px;
+  color:#e40606;
+
+  font-weight:700;
+  line-height:1.1;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.conference-card{
+  max-width:1080px;
+
+  margin:auto;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:26px;
+
+  padding:30px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:30px;
+
+  box-shadow:0 12px 35px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.conference-content{
+  flex:1;
+}
+
+.conference-content h2{
+  font-size:37px;
+
+  color:#fff;
+
+  line-height:1.1;
+
+  margin-bottom:18px;
+
+  font-weight:600;
+}
+
+.conference-content p{
+  font-size:13px;
+
+  color:#d2d2d2;
+
+  line-height:1.8;
+
+  max-width:450px;
+}
+
+/* =========================
+   IMAGE SLIDER
+========================= */
+
+.conference-image{
+  flex:1;
+
+  position:relative;
+
+  height:340px;
+
+  border-radius:22px;
+
+  overflow:hidden;
+}
+
+.slider-image{
+  position:absolute;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  border-radius:22px;
+
+  opacity:0;
+
+  transform:scale(1.05);
+
+  transition:
+  opacity 1s ease,
+  transform 1s ease;
+}
+
+.slider-image.active{
+  opacity:1;
+  transform:scale(1);
+}
+
+/* =========================
+   WHY SECTION
+========================= */
+
+.why-section{
+  width:100%;
+  max-width:1120px;
+
+  margin:45px auto;
+
+  display:flex;
+  align-items:center;
+
+  background:#ffffff;
+
+  border-radius:28px;
+
+  overflow:hidden;
+
+
+  box-shadow:
+  0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   LEFT IMAGE
+========================= */
+
+.why-image{
+  flex:1;
+
+  position:relative;
+
+  min-height:390px;
+
+  overflow:hidden;
+}
+
+.why-image img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  transition:0.5s;
+}
+
+.why-image img:hover{
+  transform:scale(1.04);
+}
+
+/* BUTTON */
+
+.slider-btn{
+  position:absolute;
+
+  top:50%;
+  right:16px;
+
+  transform:translateY(-50%);
+
+  width:44px;
+  height:44px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#ffffff;
+
+  color:#111;
+
+  font-size:20px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  box-shadow:0 5px 18px rgba(0,0,0,0.18);
+
+  transition:0.3s;
+}
+
+.slider-btn:hover{
+  background:#111;
+  color:#fff;
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+
+.why-content{
+  flex:1;
+
+  padding:38px 40px;
+
+  background:#fff;
+}
+
+.why-content h1{
+  font-size:54px;
+
+  color:#111;
+
+  font-weight:700;
+
+  margin-bottom:14px;
+
+  line-height:1.1;
+}
+
+/* ORANGE LINE */
+
+.why-content h1::after{
+  content:"";
+
+  display:block;
+
+  width:75px;
+  height:4px;
+
+  background:#ff6b00;
+
+  border-radius:10px;
+
+  margin-top:14px;
+}
+
+/* TEXT */
+
+.why-text{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.why-text p{
+  font-size:14px;
+
+  line-height:1.8;
+
+  color:#555;
+}
+
+.why-text strong{
+  color:#111;
+  font-weight:700;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+  .conference-heading h1{
+    font-size:34px;
+  }
+
+  .conference-card{
+    margin:0 20px;
+
+    padding:24px;
+
+    gap:22px;
+  }
+
+  .conference-content h2{
+    font-size:34px;
+  }
+
+  .conference-content p{
+    font-size:13px;
+  }
+
+  .conference-image{
+    height:300px;
+  }
+
+  .why-section{
+    margin:35px 20px;
+  }
+
+  .why-content{
+    padding:30px;
+  }
+
+  .why-content h1{
+    font-size:42px;
+  }
+
+  .why-image{
+    min-height:320px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .conference-heading{
+    padding:24px 15px 26px;
+    margin-bottom:25px;
+  }
+
+  .conference-heading span{
+    font-size:12px;
+    margin-bottom:10px;
+  }
+
+  .conference-heading h1{
+    font-size:28px;
+  }
+
+  .conference-card{
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:18px;
+
+    gap:20px;
+
+    border-radius:20px;
+  }
+
+  .conference-content h2{
+    font-size:28px;
+    margin-bottom:14px;
+  }
+
+  .conference-content p{
+    max-width:100%;
+
+    font-size:13px;
+
+    line-height:1.7;
+  }
+
+  .conference-image{
+    width:100%;
+    height:240px;
+  }
+
+  .why-section{
+    flex-direction:column;
+
+    margin:30px 15px;
+
+    border-radius:22px;
+  }
+
+  .why-image{
+    width:100%;
+
+    min-height:240px;
+  }
+
+  .why-content{
+    width:100%;
+
+    padding:26px 22px;
+  }
+
+  .why-content h1{
+    font-size:36px;
+    margin-bottom:10px;
+  }
+
+  .why-text{
+    gap:16px;
+  }
+
+  .why-text p{
+    font-size:13px;
+    line-height:1.7;
+  }
+
+  .slider-btn{
+    width:38px;
+    height:38px;
+
+    font-size:18px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+  .conference-heading h1{
+    font-size:24px;
+  }
+
+  .conference-content h2{
+    font-size:24px;
+  }
+
+  .conference-content p{
+    font-size:12px;
+  }
+
+  .conference-image{
+    height:210px;
+  }
+
+  .why-content h1{
+    font-size:30px;
+  }
+
+  .why-text p{
+    font-size:12px;
+  }
+
+  .why-image{
+    min-height:210px;
+  }
+}

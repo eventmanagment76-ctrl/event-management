@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f8f9fb, #eef1f7);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ff002f;
+}
+
+.header p {
+  margin-top: 10px;
+  color: #777;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* ✅ Card */
+.card {
+  position: relative;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* 🔥 Hover effect (NOW WORKS CLEARLY) */
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.3);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* 🔥 Image zoom on hover */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2));
+  transition: all 0.4s ease;
+}
+
+/* 🔥 Overlay animation */
+.card:hover .overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.3));
+}
+
+/* Title */
+.overlay h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Description */
+.overlay p {
+  color: #ddd;
+  font-size: 0.85rem;
+  margin: 6px 0 12px;
+  opacity: 0.9;
+}
+/* Button */
+.btn {
+  align-self: flex-start;
+  padding: 8px 18px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fffdfd;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  transition: all 0.35s ease;
+}
+
+/* 🔥 Hover Effect (YOUR REQUIREMENT) */
+.btn:hover {
+  background: #ffffff;        /* full white */
+  color: #fd0707;             /* red text */
+  border: 1px solid #ffffff;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

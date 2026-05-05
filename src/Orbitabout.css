@@ -1,0 +1,414 @@
+/* ================= BACKGROUND ================= */
+
+.why {
+  padding: 55px 20px 45px;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(-45deg, #514a3c, #434136, #585857, #464633);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* ===== Stylish Top Background Glow ===== */
+
+.why::before{
+  content:"";
+  position:absolute;
+  top:-150px;
+  left:-120px;
+  width:420px;
+  height:420px;
+  background:radial-gradient(circle, rgba(255,80,0,0.35), transparent 70%);
+  filter:blur(90px);
+}
+
+.why::after{
+  content:"";
+  position:absolute;
+  top:-120px;
+  right:-120px;
+  width:380px;
+  height:380px;
+  background:radial-gradient(circle, rgba(255,200,0,0.25), transparent 70%);
+  filter:blur(100px);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ================= CONTAINER ================= */
+
+.why-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= IMAGE STYLE ================= */
+
+.why-image {
+  position: relative;
+  transform: translateY(-10px) translateX(40px);
+}
+
+/* glow behind image */
+
+.why-image::before {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+
+  background:
+    radial-gradient(circle,
+    rgba(255,120,0,0.45),
+    transparent 70%);
+
+  top: -20px;
+  left: -10px;
+
+  z-index: 0;
+
+  filter: blur(55px);
+}
+
+/* main image */
+
+.main-img {
+  width: 360px;
+  height: 340px;
+
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+
+  border: 6px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 25px 60px rgba(248, 209, 175, 0.45),
+    0 0 30px rgba(255,120,0,0.15);
+
+  animation: float 4s ease-in-out infinite;
+
+  transition: 0.4s ease;
+}
+
+.main-img:hover{
+  transform: scale(1.03);
+}
+
+/* decorative image */
+
+.decor-img {
+  position: absolute;
+
+  width: 300px;
+  height: 200px;
+
+  object-fit: cover;
+  border-radius: 28px;
+
+  bottom: -100px;
+  left: -40px;
+
+  transform: rotate(-12deg);
+
+  z-index: 1;
+
+  border: 4px solid rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 20px 45px rgba(255, 221, 221, 0.35);
+
+  transition: 0.4s;
+}
+
+.decor-img:hover {
+  transform: rotate(-6deg) scale(1.05);
+}
+
+/* floating animation */
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* ================= CONTENT ================= */
+
+.why-content{
+  margin-left: 90px;
+}
+
+/* ================= HEADING ================= */
+
+.why-content h1 {
+  color: rgb(251, 7, 7);
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 12px;
+}
+
+.why-content span {
+  color: rgb(249, 246, 246);
+
+  text-shadow:
+    0 0 12px rgba(255,72,0,0.35);
+}
+
+/* stylish underline */
+
+.why-content h1::after{
+  content:"";
+  display:block;
+
+  width:100px;
+  height:4px;
+
+  margin-top:14px;
+
+  border-radius:20px;
+
+  background:
+    linear-gradient(90deg,#ff4000,#ff8c42,transparent);
+}
+
+/* paragraph */
+
+.why-content p{
+  color:#dddddd;
+  font-size:16px;
+  line-height:1.7;
+
+  margin:18px 0 26px;
+
+  max-width:520px;
+}
+
+/* ================= CARDS ================= */
+
+.why-boxes{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.box{
+  background: rgba(255,255,255,0.06);
+
+  padding:16px 20px;
+
+  border-radius:18px;
+
+  color:white;
+  font-size:15px;
+  font-weight:500;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.05);
+
+  transition:0.35s ease;
+}
+
+.box:hover{
+  transform:translateY(-8px) scale(1.03);
+
+  background: rgba(255,255,255,0.09);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.35),
+    0 0 20px rgba(255,90,0,0.12);
+
+  border-color:rgba(255,120,50,0.55);
+}
+
+/* ================= SCROLL ANIMATION ================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger animation */
+
+.box:nth-child(1).show { transition-delay: 0.1s; }
+.box:nth-child(2).show { transition-delay: 0.2s; }
+.box:nth-child(3).show { transition-delay: 0.3s; }
+.box:nth-child(4).show { transition-delay: 0.4s; }
+.box:nth-child(5).show { transition-delay: 0.5s; }
+.box:nth-child(6).show { transition-delay: 0.6s; }
+
+/* ================= EXTRA RESPONSIVE ================= */
+
+@media (max-width: 1200px){
+
+  .why-container{
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .why-content{
+    margin-left: 40px;
+  }
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px){
+
+  .why{
+    padding: 60px 20px 50px;
+  }
+
+  .why-container{
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .why-image{
+    transform: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .why-content{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .why-content p{
+    max-width: 100%;
+    margin: 18px auto 26px;
+  }
+
+  .why-boxes{
+    width: 100%;
+  }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+  .why{
+    padding: 50px 16px 40px;
+  }
+
+  .why-container{
+    gap: 40px;
+  }
+
+  .main-img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .decor-img{
+    width: 220px;
+    height: 150px;
+
+    left: -10px;
+    bottom: -70px;
+  }
+
+  .why-content h1{
+    font-size: 34px;
+    line-height: 1.25;
+  }
+
+  .why-content p{
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .why-boxes{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .box{
+    padding: 18px;
+    font-size: 14px;
+  }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+  .why{
+    padding: 45px 14px 35px;
+  }
+
+  .main-img{
+    width: 240px;
+    height: 240px;
+  }
+
+  .decor-img{
+    width: 170px;
+    height: 120px;
+
+    bottom: -45px;
+    left: -5px;
+  }
+
+  .why-content h1{
+    font-size: 28px;
+  }
+
+  .why-content p{
+    font-size: 14px;
+  }
+
+  .box{
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+}
+
+/* ================= VERY SMALL DEVICES ================= */
+
+@media (max-width: 360px){
+
+  .main-img{
+    width: 210px;
+    height: 210px;
+  }
+
+  .decor-img{
+    width: 140px;
+    height: 100px;
+  }
+
+  .why-content h1{
+    font-size: 24px;
+  }
+
+}
