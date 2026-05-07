@@ -1,0 +1,170 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Poppins", Arial, sans-serif;
+  background:#f4f6f8;
+  color:#222;
+}
+
+/* MAIN WRAPPER */
+.blog2{
+  width:100%;
+}
+
+/* HERO IMAGE */
+.blog2-hero{
+  width:100%;
+  height:420px;
+  overflow:hidden;
+  position:relative;
+}
+
+.blog2-hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.6s;
+}
+
+.blog2-hero:hover img{
+  transform:scale(1.05);
+}
+
+/* CONTENT BOX */
+.blog2-container{
+  max-width:900px;
+  margin:auto;
+  background:#fff;
+  padding:50px;
+  margin-top:-100px;
+  border-radius:16px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  position:relative;
+  z-index:2;
+}
+
+/* TITLE */
+.blog2-title{
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:20px;
+  color:#111;
+  line-height:1.3;
+}
+
+/* INTRO */
+.blog2-intro{
+  font-size:18px;
+  color:#444;
+  line-height:1.8;
+  margin-bottom:25px;
+}
+
+/* HEADINGS */
+.blog2 h2{
+  font-size:26px;
+  margin-top:35px;
+  margin-bottom:12px;
+  color:#111;
+  font-weight:600;
+}
+
+.blog2 h3{
+  font-size:19px;
+  margin-top:22px;
+  margin-bottom:6px;
+  color:#222;
+  font-weight:600;
+}
+
+/* PARAGRAPH */
+.blog2 p{
+  font-size:15.5px;
+  line-height:1.9;
+  color:#555;
+  margin-bottom:16px;
+}
+
+/* LIST */
+.blog2-list{
+  margin:20px 0;
+  padding-left:22px;
+}
+
+.blog2-list li{
+  margin-bottom:10px;
+  font-size:15px;
+  color:#444;
+  line-height:1.7;
+}
+
+/* STRONG TEXT */
+.blog2 strong{
+  color:#000;
+}
+
+/* DIVIDER (optional if you add hr) */
+.blog2 hr{
+  margin:30px 0;
+  border:none;
+  height:1px;
+  background:#eee;
+}
+
+/* TABLET */
+@media(max-width:992px){
+
+  .blog2-container{
+    padding:35px;
+    margin-top:-80px;
+  }
+
+  .blog2-title{
+    font-size:30px;
+  }
+
+  .blog2 h2{
+    font-size:22px;
+  }
+
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .blog2-hero{
+    height:260px;
+  }
+
+  .blog2-container{
+    padding:20px;
+    margin-top:-50px;
+    border-radius:10px;
+  }
+
+  .blog2-title{
+    font-size:24px;
+  }
+
+  .blog2-intro{
+    font-size:16px;
+  }
+
+  .blog2 h2{
+    font-size:20px;
+  }
+
+  .blog2 h3{
+    font-size:17px;
+  }
+
+  .blog2 p{
+    font-size:14px;
+  }
+
+}

@@ -1,0 +1,349 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+ font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ece8e8;
+  overflow-x: hidden;
+}
+
+/* =========================
+   BANNER SLIDER
+========================= */
+.conference-image {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s ease, transform 1s ease;
+}
+
+.slider-image.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================
+   SECTION 50/50 (COMMON)
+========================= */
+.conference-section-1,
+.conference-box {
+  width: 100%;
+}
+
+/* CENTER WRAPPER */
+.conference-inner,
+.conference-box-inner {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+  padding: 60px 40px;
+}
+
+/* =========================
+   IMAGE COMMON STYLE
+========================= */
+.conference-wt-50,
+.conference-box-img {
+  flex: 1;
+}
+
+.conference-wt-50 img,
+.conference-box-img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+
+  transform: scale(1.05);
+  opacity: 0;
+  animation: fadeZoom 1.2s ease forwards;
+}
+
+/* =========================
+   TEXT COMMON STYLE
+========================= */
+.conference-wt-50 h4,
+.conference-box-content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: red;
+
+}
+
+.conference-wt-50 p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* BOX TEXT COLOR DIFFERENCE */
+.conference-box-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* =========================
+   DARK SECTION BACKGROUND
+========================= */
+.conference-section-1,
+.conference-box {
+  background: #111;
+  color: #fff;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeZoom {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+  .conference-inner,
+  .conference-box-inner {
+    padding: 50px 30px;
+    gap: 25px;
+  }
+
+  .conference-wt-50 img,
+  .conference-box-img img {
+    height: 280px;
+  }
+
+  .conference-wt-50 h4,
+  .conference-box-content h2 {
+    font-size: 24px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  .conference-inner,
+  .conference-box-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conference-wt-50 img,
+  .conference-box-img img {
+    height: 220px;
+  }
+
+  .conference-wt-50 p,
+  .conference-box-content p {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+  .conference-wt-50 img,
+  .conference-box-img img {
+    height: 200px;
+  }
+
+  .conference-wt-50 h4,
+  .conference-box-content h2 {
+    font-size: 20px;
+  }
+
+  .conference-wt-50 p,
+  .conference-box-content p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   FULL WIDTH BACKGROUND
+========================= */
+.conference-box {
+  width: 100%;
+  background: #535151;   /* FULL WIDTH COLOR */
+  padding: 80px 0;
+}
+
+/* =========================
+   CENTER CONTENT WRAPPER
+========================= */
+.conference-box-inner {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  padding: 0 40px;
+}
+
+/* =========================
+   LEFT IMAGE (50%)
+========================= */
+.conference-box-img {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.conference-box-img img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+
+  transform: scale(1.1);
+  opacity: 0;
+  animation: zoomIn 1.2s ease forwards;
+}
+
+/* =========================
+   RIGHT CONTENT (50%)
+========================= */
+.conference-box-content {
+  flex: 1;
+  color: #fff;
+  margin-top: -90px;
+}
+
+.conference-box-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: red;
+  animation: slideIn 1s ease forwards;
+  
+}
+
+.conference-box-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ccc;
+
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes zoomIn {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+  .conference-box-inner {
+    gap: 25px;
+  }
+
+  .conference-box-img img {
+    height: 300px;
+  }
+
+  .conference-box-content h2 {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   MOBILE (STACK)
+========================= */
+@media (max-width: 768px) {
+  .conference-box-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conference-box-img img {
+    height: 240px;
+  }
+
+  .conference-box-content h2 {
+    font-size: 22px;
+  }
+
+  .conference-box-content p {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 480px) {
+  .conference-box-img img {
+    height: 200px;
+  }
+
+  .conference-box-content h2 {
+    font-size: 20px;
+  }
+
+  .conference-box-content p {
+    font-size: 13px;
+  }
+}
