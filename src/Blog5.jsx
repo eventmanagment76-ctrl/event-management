@@ -1,151 +1,342 @@
-import React, { useEffect } from "react";
-import "./Blog5.css";
-import blogImg from "./assets/blog1.png"; // adjust path if needed
+import React from "react";
+import "./Blog1.css";
 
 function Blog5() {
-
-  // SCROLL ANIMATION
-  useEffect(() => {
-    const elements = document.querySelectorAll(".fade-up");
-
-    const reveal = () => {
-      elements.forEach((el) => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-          el.classList.add("active");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", reveal);
-    reveal();
-
-    return () => window.removeEventListener("scroll", reveal);
-  }, []);
-
   return (
-    <div className="blog5">
+    <div className="blog1-page">
 
-      {/* HERO IMAGE */}
-      <div className="blog5-hero">
-        <img src={blogImg} alt="Event Setup" />
-      </div>
+      {/* HERO */}
+      <section className="blog1-hero">
+        <div className="blog1-overlay"></div>
 
-      {/* CONTENT */}
-      <div className="blog5-container">
+        <div className="blog1-hero-content">
+          <p className="blog1-category">Conference Events</p>
 
-        <h1 className="blog5-title fade-up">
-          How To Host An Event
-        </h1>
+          <h1>
+            Conference Event Planning Guide for Businesses
+          </h1>
 
-        <p className="blog5-intro fade-up">
-          A complete guide to organizing successful events easily with premium ambiance,
-          lighting, and guest experience.
-        </p>
-
-        {/* INTRO */}
-        <section className="fade-up">
-          <h2>Introduction</h2>
-          <p>
-            Hosting an event is more than just arranging tables, chairs, and lighting—it is about
-            creating an unforgettable experience that resonates with every guest. The image above
-            beautifully represents a premium outdoor event setup, where elegance meets functionality.
-            The combination of warm lighting, floral arrangements, and thoughtfully designed seating
-            creates an atmosphere that feels both luxurious and welcoming.
+          <p className="blog1-hero-desc">
+            Learn how to organize successful business conferences with smart
+            planning, engaging speakers, interactive sessions, and seamless
+            event execution.
           </p>
+        </div>
+      </section>
 
-          <p>
-            In today’s competitive world, events are no longer just gatherings—they are powerful tools
-            for communication, branding, and relationship building. Whether it’s a corporate event,
-            product launch, wedding, or private celebration, every detail contributes to the overall success.
-          </p>
-        </section>
+      {/* BLOG CONTENT */}
+      <section className="blog1-wrapper">
 
-        {/* SECTIONS */}
-        <section className="fade-up">
-          <h2>1. Define the Purpose of Your Event</h2>
-          <p>
-            Every successful event begins with a clear purpose. Understanding why you are hosting the
-            event allows you to make better decisions regarding venue, design, and guest experience.
-          </p>
-        </section>
+        <div className="blog1-container">
 
-        <section className="fade-up">
-          <h2>2. Choosing the Perfect Venue</h2>
-          <p>
-            The venue is one of the most critical aspects of any event. Outdoor venues provide a natural charm
-            that enhances the overall ambiance.
-          </p>
-        </section>
+          <img
+            src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+            alt="Conference Event"
+            className="blog1-main-image"
+          />
 
-        <section className="fade-up">
-          <h2>3. Creating a Memorable Ambiance</h2>
-          <p>
-            Lighting, décor, and music together create the mood of the event. A well-designed ambiance
-            makes your event visually stunning.
-          </p>
-        </section>
+          <div className="blog1-content">
 
-        <section className="fade-up">
-          <h2>4. Seating and Layout Planning</h2>
-          <p>
-            Proper seating ensures comfort and smooth interaction. Round tables encourage conversation
-            and better guest engagement.
-          </p>
-        </section>
+            <p>
+              Conferences have become one of the most effective ways for
+              businesses to connect with audiences, share knowledge, build
+              professional relationships, and strengthen brand visibility.
+              A well-planned conference creates opportunities for networking,
+              learning, collaboration, and business growth.
+            </p>
 
-        <section className="fade-up">
-          <h2>5. Stage and Entertainment</h2>
-          <p>
-            A well-designed stage keeps guests engaged. Entertainment adds energy and excitement.
-          </p>
-        </section>
+            <p>
+              At <span>Orbit Events and Experiences</span>, we believe every
+              conference should deliver value, engagement, and a memorable
+              attendee experience. From corporate summits and leadership forums
+              to industry expos and annual business meetings, proper planning
+              plays a major role in event success.
+            </p>
 
-        <section className="fade-up">
-          <h2>6. Food and Catering</h2>
-          <p>
-            Food is one of the most memorable aspects. Quality and presentation matter.
-          </p>
-        </section>
+            <p>
+              This guide explores the essential elements of successful
+              conference event planning for modern businesses.
+            </p>
 
-        <section className="fade-up">
-          <h2>7. Guest Experience</h2>
-          <p>
-            Guest satisfaction defines event success. Smooth flow and comfort are key.
-          </p>
-        </section>
+            <h2>1. Define Clear Conference Goals</h2>
 
-        <section className="fade-up">
-          <h2>8. Theme and Decoration</h2>
-          <p>
-            A consistent theme enhances the visual appeal and creates a strong impression.
-          </p>
-        </section>
+            <p>
+              The first step in conference planning is identifying the purpose
+              of the event. Businesses should clearly define what they want to
+              achieve through the conference.
+            </p>
 
-        <section className="fade-up">
-          <h2>9. Budget Management</h2>
-          <p>
-            Plan your budget carefully to avoid overspending while maintaining quality.
-          </p>
-        </section>
+            <p>Conference goals may include:</p>
 
-        <section className="fade-up">
-          <h2>10. Execution</h2>
-          <p>
-            Proper planning and coordination ensure smooth event execution.
-          </p>
-        </section>
+            <ul>
+              <li>Business networking</li>
+              <li>Brand awareness</li>
+              <li>Lead generation</li>
+              <li>Industry education</li>
+              <li>Product launches</li>
+              <li>Team collaboration</li>
+            </ul>
 
-        {/* CONCLUSION */}
-        <section className="fade-up">
-          <h2>Conclusion</h2>
-          <p>
-            Hosting a successful event requires planning, creativity, and execution. With the right approach,
-            you can create unforgettable experiences.
-          </p>
-        </section>
+            <p>
+              Having clear goals helps businesses create focused event
+              strategies, improve audience engagement, and measure event
+              success effectively.
+            </p>
 
-      </div>
+            <h2>2. Choose the Right Venue</h2>
+
+            <p>
+              Venue selection is one of the most important parts of conference
+              planning. The right venue creates a professional atmosphere and
+              improves attendee comfort.
+            </p>
+
+            <p>Important venue considerations include:</p>
+
+            <ul>
+              <li>Location accessibility</li>
+              <li>Seating capacity</li>
+              <li>Parking facilities</li>
+              <li>Audio and visual setup</li>
+              <li>Stage design possibilities</li>
+              <li>Networking spaces</li>
+            </ul>
+
+            <p>
+              Modern conference venues should support technology integration,
+              audience interaction, and smooth event operations.
+            </p>
+
+            <h2>3. Focus on Engaging Speakers</h2>
+
+            <p>
+              Speakers play a major role in the success of any conference.
+              Engaging speakers can inspire audiences, encourage interaction,
+              and create meaningful discussions.
+            </p>
+
+            <p>Successful conferences often include:</p>
+
+            <ul>
+              <li>Industry experts</li>
+              <li>Business leaders</li>
+              <li>Motivational speakers</li>
+              <li>Panel discussions</li>
+              <li>Interactive Q&A sessions</li>
+            </ul>
+
+            <p>
+              Businesses should select speakers who align with the conference
+              theme and audience interests.
+            </p>
+
+            <h2>4. Create Interactive Sessions</h2>
+
+            <p>
+              Modern attendees expect conferences to be interactive rather than
+              passive. Businesses are now focusing on audience participation
+              and engagement.
+            </p>
+
+            <p>Interactive conference ideas include:</p>
+
+            <ul>
+              <li>Live polls</li>
+              <li>Workshops</li>
+              <li>Networking activities</li>
+              <li>Audience Q&A</li>
+              <li>Group discussions</li>
+              <li>Hands-on demonstrations</li>
+            </ul>
+
+            <p>
+              Interactive sessions keep attendees involved and improve overall
+              event experiences.
+            </p>
+
+            <h2>5. Use Advanced Event Technology</h2>
+
+            <p>
+              Technology has become an essential part of conference event
+              planning. Businesses use modern event technology to improve
+              communication, engagement, and event management.
+            </p>
+
+            <p>Popular conference technologies include:</p>
+
+            <ul>
+              <li>LED screens</li>
+              <li>Digital registration systems</li>
+              <li>Live streaming</li>
+              <li>Mobile event apps</li>
+              <li>Virtual networking tools</li>
+              <li>Presentation technology</li>
+            </ul>
+
+            <p>
+              Technology helps create smooth experiences for both organizers
+              and attendees.
+            </p>
+
+            <h2>6. Plan Effective Event Branding</h2>
+
+            <p>
+              Conference branding helps businesses create professional and
+              memorable event environments. Strong branding improves audience
+              recognition and enhances brand identity.
+            </p>
+
+            <p>Conference branding may include:</p>
+
+            <ul>
+              <li>Stage backdrops</li>
+              <li>LED visuals</li>
+              <li>Custom banners</li>
+              <li>Digital displays</li>
+              <li>Branded welcome kits</li>
+              <li>Social media integration</li>
+            </ul>
+
+            <p>
+              Consistent branding creates a visually powerful and organized
+              conference atmosphere.
+            </p>
+
+            <h2>7. Prioritize Attendee Comfort</h2>
+
+            <p>
+              Comfortable attendees are more engaged and productive during
+              conferences. Businesses should focus on creating a smooth and
+              enjoyable experience for guests.
+            </p>
+
+            <p>Important attendee considerations include:</p>
+
+            <ul>
+              <li>Comfortable seating</li>
+              <li>Refreshment areas</li>
+              <li>Clear event schedules</li>
+              <li>Breakout spaces</li>
+              <li>Proper lighting and sound</li>
+            </ul>
+
+            <p>
+              Attendee satisfaction directly impacts conference success and
+              audience engagement.
+            </p>
+
+            <h2>8. Promote Networking Opportunities</h2>
+
+            <p>
+              Networking is one of the main reasons people attend business
+              conferences. Successful conferences encourage professional
+              interaction and relationship building.
+            </p>
+
+            <p>Networking opportunities may include:</p>
+
+            <ul>
+              <li>Networking lounges</li>
+              <li>Business meetups</li>
+              <li>Interactive workshops</li>
+              <li>Industry discussion groups</li>
+              <li>Team-building sessions</li>
+            </ul>
+
+            <p>
+              Strong networking experiences increase attendee value and improve
+              event outcomes.
+            </p>
+
+            <h2>9. Hybrid Conferences Are Growing</h2>
+
+            <p>
+              Hybrid conferences combine physical and virtual participation,
+              allowing businesses to reach wider audiences across different
+              locations.
+            </p>
+
+            <p>Benefits of hybrid conferences include:</p>
+
+            <ul>
+              <li>Global audience reach</li>
+              <li>Flexible participation</li>
+              <li>Reduced travel limitations</li>
+              <li>Improved accessibility</li>
+              <li>Increased audience engagement</li>
+            </ul>
+
+            <p>
+              Hybrid formats are becoming an important part of modern business
+              conferences.
+            </p>
+
+            <h2>10. Measure Conference Success</h2>
+
+            <p>
+              After the conference ends, businesses should evaluate event
+              performance to improve future planning.
+            </p>
+
+            <p>Conference analytics may include:</p>
+
+            <ul>
+              <li>Attendance numbers</li>
+              <li>Audience feedback</li>
+              <li>Session engagement</li>
+              <li>Networking participation</li>
+              <li>Social media reach</li>
+            </ul>
+
+            <p>
+              Data-driven insights help businesses understand audience behavior
+              and improve future conferences.
+            </p>
+
+            <h2>Why Conference Planning Matters</h2>
+
+            <p>
+              Proper conference planning helps businesses create organized,
+              professional, and impactful events. A successful conference
+              improves brand credibility, strengthens relationships, and
+              creates valuable business opportunities.
+            </p>
+
+            <p>
+              Businesses that invest in quality conference experiences often
+              achieve stronger audience engagement and long-term professional
+              growth.
+            </p>
+
+            <h2>Conclusion</h2>
+
+            <p>
+              Conference events continue to play an important role in modern
+              business communication, networking, and brand development.
+              Successful conferences require strategic planning, engaging
+              content, strong branding, and seamless execution.
+            </p>
+
+            <p>
+              At <span>Orbit Events and Experiences</span>, we specialize in
+              planning and managing professional conference events that deliver
+              exceptional experiences for businesses and audiences alike.
+              From venue management and stage production to speaker coordination
+              and audience engagement, we create conferences designed for
+              success.
+            </p>
+
+            <p>
+              A well-executed conference is more than just an event — it is a
+              powerful platform for connection, innovation, and business growth.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </div>
   );
 }

@@ -1,95 +1,89 @@
-// ConferenceSection.jsx
+// BrandActivationSection.jsx
 
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
 
-import conference1 from "./assets/conferenc1.jpg";
-import conference2 from "./assets/conference2.jpg";
-import conference3 from './assets/conference3.png'
-import conference4 from './assets/conference4.jpg'
-//image grid list
-import conference5 from './assets/conference5.png'
-import conference6 from './assets/conference6.png'
-import conference7 from './assets/conference7.png'
-import conference8 from './assets/conference8.png'
-import conference9 from './assets/conference9.png'
-import conference10 from './assets/conference10.png'
-import conference11 from './assets/conference11.png'
-import conference12 from './assets/conference12.png'
-import conference13 from './assets/conference13.png'
+
+import l8 from "./assets/l8.jpeg";
+import i6 from "./assets/i6.jpeg";
+import m3 from "./assets/m3.jpeg";
+import l6 from "./assets/l6.jpeg";
+import i4 from "./assets/i4.jpeg";
+import j9 from "./assets/j9.jpeg";
+import m1 from "./assets/m1.jpeg";
+import l5 from "./assets/l5.jpeg";
+import j7 from "./assets/j7.jpeg";
+
+
+
+
+
+
+
+
+
+
+import l2 from "./assets/l2.jpeg";
+import k4 from "./assets/k4.jpeg";
+import l1 from "./assets/l1.jpeg";
+import pro1 from "./assets/pro1.webp";
+import h10 from "./assets/h10.jpeg";
+import pro10 from "./assets/pro10.jpg";
+import k3 from "./assets/k3.jpeg";
+import pro13 from "./assets/pro13.webp";
+
 import Solutions from "./Solution";
 
-export default function Brand() {
-  //All images
+export default function BrandActivationSection() {
 
   const imagelist = [
     {
-      img: conference5,
-      title: "Tech Conference",
-      desc: "This conference highlights innovative technologies, expert talks, networking sessions, and future trends shaping the digital world.",
+      img: l2,
+      title: "Brand Experience Strategy",
     },
     {
-      img: conference6,
-      title: "Business Summit",
-      desc: "A professional gathering focused on business growth, investment strategies, leadership insights, and global market expansion.",
+      img:k4,
+      title: "Interactive Audience Engagement",
     },
     {
-      img: conference7,
-      title: "Developer Meetup",
-      desc: "An engaging event for developers to explore modern frameworks, coding practices, real-world applications, and collaboration opportunities.",
+      img: j7,
+      title: "Experiential Campaign Planning",
     },
     {
-      img: conference8,
-      title: "Startup Expo",
-      desc: "A platform for startups to showcase ideas, connect with investors, learn scaling strategies, and build meaningful partnerships.",
+      img: l1,
+      title: "Retail Activation Experience",
     },
     {
-      img: conference9,
-      title: "AI & Innovation",
-      desc: "Focused on artificial intelligence, machine learning, automation, and how innovation is transforming industries worldwide.",
+      img: h10,
+      title: "Brand Visibility & Engagement",
     },
     {
-      img: conference10,
-      title: "Marketing Conference",
-      desc: "Covers digital marketing trends, branding strategies, audience engagement, and data-driven marketing techniques.",
+      img: pro1,
+      title: "Promotional Event Production",
     },
     {
-      img: conference11,
-      title: "Leadership Summit",
-      desc: "An inspiring event about leadership skills, team management, decision-making, and building strong organizational culture.",
+      img: pro10,
+      title: "Live Brand Showcase Events",
     },
     {
-      img: conference12,
-      title: "Design Workshop",
-      desc: "A creative space for designers to explore UI/UX trends, design thinking, prototyping, and user-centered design approaches.",
+      img: k3,
+      title: "Consumer Interaction Zones",
     },
     {
-      img: conference13,
-      title: "Global Tech Expo",
-      desc: "A large-scale exhibition featuring cutting-edge technologies, product demos, industry leaders, and global networking opportunities.",
+      img: pro13,
+      title: "Mall & Outdoor Activations",
     },
-    // {
-    //   img: conference5,
-    //   title: "Tech Conference",
-    //   desc: "This conference focuses on innovative ideas, networking opportunities, expert speakers, and future technology trends shaping the industry.",
-    // },
-
-
   ];
 
-
-  // BANNER IMAGES
   const images = [
-    conference2,
-    conference3,
-    conference4,
-
+    l8,
+    i6,
+    m3,
+    l6,
   ];
 
-  // CURRENT IMAGE
   const [currentImage, setCurrentImage] = useState(0);
 
-  // AUTO SLIDE
   useEffect(() => {
 
     const slider = setInterval(() => {
@@ -107,10 +101,15 @@ export default function Brand() {
   }, [images.length]);
 
   return (
+
     <div>
+
       <section className="conference-section">
+
         <div className="conference-image">
+
           {images.map((img, index) => (
+
             <img
               key={index}
               src={img}
@@ -121,119 +120,173 @@ export default function Brand() {
                   : "slider-image"
               }
             />
+
           ))}
+                    <h1> Brand Activation</h1>
+         
+<h5 className="orbit-text">
+  <span className="red-o">O</span>
+  <span className="black-text">RBIT</span>
+  <span className="white-text"> events and experiences</span>
+</h5>
+
         </div>
+
       </section>
+
 
       <section className="conference-section-1">
 
-  <div className="conference-inner">
+        <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+          <div className="conference-wt-50 conference-img">
+            <img src={i4} alt="Brand Activation Event" />
+          </div>
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Engaging Audiences, Bringing Brands to Life</h4>
-  <p>
-    Brand activation events are designed to create meaningful and memorable interactions between brands and their target audience. They focus on building strong emotional connections by turning brand messages into real-life experiences.
+          <div className="conference-wt-50 conference-content">
 
-    Through interactive activities, live demonstrations, and immersive experiences, brand activations encourage direct engagement and participation. These events help brands showcase their identity, values, and offerings in a creative and impactful way.
+            <h4>Creating Brand Experiences That Connect</h4>
 
-    By connecting with audiences on a personal level, brand activation events boost awareness, strengthen loyalty, and leave a lasting impression that drives long-term brand success.
-  </p>
-</div>
+            <p>
+              Our brand activation events are designed to create memorable experiences
+              that strengthen the connection between brands and their audience.
+            </p>
 
-  </div>
+            <p>
+              Through innovative concepts and immersive activities, we help businesses
+              create impactful experiences that increase visibility and engagement.
+            </p>
 
-</section>
+            <ul>
+              <li>Creative brand activation concepts and planning</li>
+              <li>Interactive audience engagement experiences</li>
+              <li>Product sampling and live brand showcases</li>
+              <li>Professional stage setup and promotional displays</li>
+              <li>Social media engagement and live event coverage</li>
+              <li>End-to-end event coordination and execution</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
       <section>
         <Solutions imagelist={imagelist} />
       </section>
-       
-  <section className="conference-section-1">
 
-  <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
+      <section className="conference-section-1">
+
+        <div className="conference-inner">
+
+          <div className="conference-wt-50 conference-img">
+            <img src={j9} alt="Brand Activation Event" />
+          </div>
+
+          <div className="conference-wt-50 conference-content">
+
+            <h4>Building Strong Connections Through Brand Activations</h4>
+
+            <p>
+              We create engaging brand activation campaigns that help businesses
+              connect directly with customers in meaningful and memorable ways.
+            </p>
+
+            <p>
+              From promotional roadshows to experiential marketing campaigns,
+              we deliver activation experiences that inspire audiences and strengthen loyalty.
+            </p>
+
+            <ul>
+              <li>Customized brand campaign planning and execution</li>
+              <li>Experiential marketing and audience interaction</li>
+              <li>Creative event décor and promotional branding</li>
+              <li>Live entertainment and engagement activities</li>
+              <li>Digital media and influencer collaboration support</li>
+              <li>Professional guest and crowd management services</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section className="conference-section-1">
+
+        <div className="conference-inner">
+
+          <div className="conference-wt-50 conference-content">
+
+            <h4>Transforming Ideas Into Powerful Brand Experiences</h4>
+
+            <p>
+              Brand activation is more than promotion — it is about creating
+              experiences that inspire audiences, encourage participation,
+              and strengthen customer relationships.
+            </p>
+
+            <p>
+              Our creative team combines strategy and innovation to ensure every
+              activation event creates maximum impact and audience engagement.
+            </p>
+
+            <ul>
+              <li>Innovative activation setups and event ambiance</li>
+              <li>Interactive games, activities, and live experiences</li>
+              <li>Creative storytelling and immersive brand engagement</li>
+              <li>Technology-driven activation experiences</li>
+              <li>Smooth event flow and audience coordination</li>
+              <li>Complete event support from concept to completion</li>
+            </ul>
+
+          </div>
+
+          <div className="conference-wt-50 conference-img">
+            <img src={m1} alt="Brand Activation Event" />
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section className="conference-box">
+
+        <div className="conference-box-inner">
+
+          <div className="conference-box-img">
+            <img src={l5} alt="Brand Activation Event" />
+          </div>
+
+          <div className="conference-box-content">
+
+            <h2>Why Choose Our Brand Activation Services?</h2>
+
+            <p>
+              We create impactful brand activation experiences that combine creativity,
+              strategy, and audience engagement to help your brand stand out.
+            </p>
+
+            <ul>
+              <li>Experienced team for creative brand activation events</li>
+              <li>Customized activation strategies tailored to your brand</li>
+              <li>Interactive audience engagement and live experiences</li>
+              <li>Modern event technology and promotional solutions</li>
+              <li>Professional coordination for smooth event execution</li>
+              <li>Memorable campaigns that strengthen brand awareness</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </div>
-
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Crafting Experiences That Inspire</h4>
-  <p>
-    Events are more than just gatherings—they are powerful platforms that bring people together to share ideas, celebrate achievements, and build meaningful connections. Each event is thoughtfully designed to create engaging and impactful experiences.
-
-    From interactive sessions and live showcases to networking opportunities, events encourage collaboration and open the door to new possibilities. They help individuals and organizations stay inspired, informed, and connected.
-
-    By combining creativity, planning, and execution, events leave a lasting impression and create moments that truly matter.
-  </p>
-</div>
-
-  </div>
-
-</section>
-  <section className="conference-section-1">
-
-  <div className="conference-inner">
-
-   
-
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Connecting Ideas, Creating Opportunities</h4>
-  <p>
-    Events serve as powerful platforms where individuals, businesses, and communities come together to exchange ideas and explore new possibilities. They are designed to foster meaningful interactions and inspire collaboration across diverse fields.
-
-    With a mix of engaging sessions, live experiences, and networking opportunities, events create an environment that encourages learning and growth. They allow participants to gain insights, discover innovations, and connect with like-minded people.
-
-    Well-crafted events leave a lasting impact by strengthening relationships, enhancing knowledge, and opening doors to new opportunities.
-  </p>
-</div>
-     {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
-
-  </div>
-
-</section>
-
-    <section className="conference-box">
-
-  <div className="conference-box-inner">
-
-    {/* LEFT IMAGE */}
-    <div className="conference-box-img">
-      <img src={conference1} alt="Conference Event" />
-    </div>
-
-    {/* RIGHT CONTENT */}
-    <div className="conference-box-content">
-  <h2>Why Choose Events?</h2>
-
-  <p>
-    Events create unique opportunities for people to come together, share ideas, and build meaningful connections in an engaging environment.
-  </p>
-
-  <p>
-    They offer a platform for collaboration, learning, and interaction across various industries and communities.
-  </p>
-
-  <p>
-    Through shared experiences and insights, events help individuals and organizations grow, innovate, and stay ahead in a dynamic world.
-  </p>
-</div>
-
-  </div>
-
-</section>
-
-    </div>
-
   );
 }

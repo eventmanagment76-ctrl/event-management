@@ -3,87 +3,68 @@
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
 
-import conference1 from "./assets/conferenc1.jpg";
-import conference2 from "./assets/conference2.jpg";
-import conference3 from './assets/conference3.png'
-import conference4 from './assets/conference4.jpg'
-//image grid list
-import conference5 from './assets/conference5.png'
-import conference6 from './assets/conference6.png'
-import conference7 from './assets/conference7.png'
-import conference8 from './assets/conference8.png'
-import conference9 from './assets/conference9.png'
-import conference10 from './assets/conference10.png'
-import conference11 from './assets/conference11.png'
-import conference12 from './assets/conference12.png'
-import conference13 from './assets/conference13.png'
+import exp2 from "./assets/exp2.jpg";
+import exp33 from "./assets/exp33.jpg";
+import exp44 from "./assets/exp44.jpg";
+import exp5 from "./assets/exp5.jpg";
+import exp9 from "./assets/exp9.jpg";
+import exp3 from "./assets/exp3.jpg";
+import exp4 from "./assets/exp4.jpg";
+import exp8 from "./assets/exp8.jpg";
+
+
+
+
+
+// image grid list
+import exp12 from "./assets/exp12.jpg";
+import exp6 from "./assets/exp6.jpg";
+import exp7 from "./assets/exp7.jpg";
+import exp10 from "./assets/exp10.jpg";
+import exp11 from "./assets/exp11.jpg";
+import exp13 from "./assets/exp13.jpg";
+
+
 import Solutions from "./Solution";
 
 export default function Experiential() {
-  //All images
 
+  // ALL IMAGES
   const imagelist = [
     {
-      img: conference5,
-      title: "Tech Conference",
-      desc: "This conference highlights innovative technologies, expert talks, networking sessions, and future trends shaping the digital world.",
+      img: exp12,
+      title: "Experiential Marketing Campaigns",
     },
     {
-      img: conference6,
-      title: "Business Summit",
-      desc: "A professional gathering focused on business growth, investment strategies, leadership insights, and global market expansion.",
+      img: exp6,
+      title: "Interactive Brand Experiences",
     },
     {
-      img: conference7,
-      title: "Developer Meetup",
-      desc: "An engaging event for developers to explore modern frameworks, coding practices, real-world applications, and collaboration opportunities.",
+      img: exp7,
+      title: "Consumer Engagement Activities",
     },
     {
-      img: conference8,
-      title: "Startup Expo",
-      desc: "A platform for startups to showcase ideas, connect with investors, learn scaling strategies, and build meaningful partnerships.",
+      img: exp10,
+      title: "Live Product Demonstrations",
     },
     {
-      img: conference9,
-      title: "AI & Innovation",
-      desc: "Focused on artificial intelligence, machine learning, automation, and how innovation is transforming industries worldwide.",
+      img: exp11,
+      title: "Creative Brand Installations",
     },
     {
-      img: conference10,
-      title: "Marketing Conference",
-      desc: "Covers digital marketing trends, branding strategies, audience engagement, and data-driven marketing techniques.",
+      img: exp13,
+      title: "On-Ground Marketing Events",
     },
-    {
-      img: conference11,
-      title: "Leadership Summit",
-      desc: "An inspiring event about leadership skills, team management, decision-making, and building strong organizational culture.",
-    },
-    {
-      img: conference12,
-      title: "Design Workshop",
-      desc: "A creative space for designers to explore UI/UX trends, design thinking, prototyping, and user-centered design approaches.",
-    },
-    {
-      img: conference13,
-      title: "Global Tech Expo",
-      desc: "A large-scale exhibition featuring cutting-edge technologies, product demos, industry leaders, and global networking opportunities.",
-    },
-    // {
-    //   img: conference5,
-    //   title: "Tech Conference",
-    //   desc: "This conference focuses on innovative ideas, networking opportunities, expert speakers, and future technology trends shaping the industry.",
-    // },
-
-
+   
+    
   ];
-
 
   // BANNER IMAGES
   const images = [
-    conference2,
-    conference3,
-    conference4,
-
+    exp2,
+    exp33,
+    exp44,
+    exp5,
   ];
 
   // CURRENT IMAGE
@@ -107,10 +88,19 @@ export default function Experiential() {
   }, [images.length]);
 
   return (
+
     <div>
+
+      {/* =========================
+          BANNER SECTION
+      ========================= */}
+
       <section className="conference-section">
+
         <div className="conference-image">
+
           {images.map((img, index) => (
+
             <img
               key={index}
               src={img}
@@ -121,117 +111,199 @@ export default function Experiential() {
                   : "slider-image"
               }
             />
+
           ))}
+                    <h1> Experiential Marketing</h1>
+         
+<h5 className="orbit-text">
+  <span className="red-o">O</span>
+  <span className="black-text">RBIT</span>
+  <span className="white-text"> events and experiences</span>
+</h5>
+
         </div>
+
       </section>
+
+      {/* =========================
+          SECTION 1
+      ========================= */}
 
       <section className="conference-section-1">
 
-  <div className="conference-inner">
+        <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+          {/* IMAGE SIDE */}
+          <div className="conference-wt-50 conference-img">
+            <img src={exp9} alt="Experiential Event" />
+          </div>
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Creating Experiences That Connect Brands</h4>
-  <p>
-    Experiential marketing events are designed to create immersive brand experiences that engage audiences in meaningful and memorable ways. They go beyond traditional marketing by allowing people to interact directly with a brand.
+          {/* CONTENT SIDE */}
+          <div className="conference-wt-50 conference-content">
 
-    Through live activations, interactive installations, and real-time engagement, these events create emotional connections and bring brand stories to life. Participants don’t just see the brand—they experience it.
+            <h4>Creating Immersive Brand Experiences</h4>
 
-    By combining creativity and strategy, experiential marketing events help build strong brand recall, increase engagement, and leave a lasting impression that drives customer loyalty.
-  </p>
-</div>
+            <p>
+              Our experiential marketing events are designed to create
+              memorable interactions that connect audiences with brands
+              in meaningful and engaging ways.
+            </p>
 
-  </div>
+            <p>
+              Through immersive activities, interactive storytelling,
+              and live brand engagement, we help businesses create
+              unforgettable experiences that leave a lasting impression.
+            </p>
 
-</section>
+            <ul>
+              <li>Interactive experiential marketing campaigns</li>
+              <li>Creative live brand activations</li>
+              <li>Immersive audience engagement activities</li>
+              <li>Technology-driven event experiences</li>
+              <li>Social media engagement integrations</li>
+              <li>Complete event planning and execution</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* =========================
+          SOLUTIONS SECTION
+      ========================= */}
+
       <section>
         <Solutions imagelist={imagelist} />
       </section>
-       
-  <section className="conference-section-1">
 
-  <div className="conference-inner">
+      {/* =========================
+          SECTION 2
+      ========================= */}
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+      <section className="conference-section-1">
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Inspiring Connections, Creating Experiences</h4>
-  <p>
-    Events are powerful platforms that bring people together to connect, collaborate, and share ideas in meaningful ways. They create opportunities for individuals and organizations to engage, learn, and grow together.
+        <div className="conference-inner">
 
-    Through a mix of interactive sessions, live experiences, and engaging activities, events encourage participation and spark new perspectives. They provide a space to discover innovations, exchange insights, and build valuable relationships.
+          {/* IMAGE SIDE */}
+          <div className="conference-wt-50 conference-img">
+            <img src={exp3} alt="Experiential Marketing" />
+          </div>
 
-    With thoughtful planning and execution, events transform simple gatherings into impactful experiences that leave lasting memories and drive meaningful connections.
-  </p>
-</div>
+          {/* CONTENT SIDE */}
+          <div className="conference-wt-50 conference-content">
 
-  </div>
+            <h4>Transforming Ideas Into Interactive Experiences</h4>
 
-</section>
-  <section className="conference-section-1">
+            <p>
+              We create experiential campaigns that encourage audience
+              participation and strengthen emotional connections with brands.
+            </p>
 
-  <div className="conference-inner">
+            <p>
+              From interactive showcases to immersive installations,
+              every event is designed to maximize engagement and
+              enhance brand visibility.
+            </p>
 
-   
+            <ul>
+              <li>Customized experiential event concepts</li>
+              <li>Interactive product showcase experiences</li>
+              <li>Live audience participation activities</li>
+              <li>Creative décor and immersive setups</li>
+              <li>Digital engagement experiences</li>
+              <li>Professional coordination and management</li>
+            </ul>
 
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Turning Ideas Into Memorable Experiences</h4>
-  <p>
-    Events are thoughtfully designed platforms that bring people together to share ideas, explore opportunities, and create meaningful connections. They offer a space where innovation meets collaboration.
+          </div>
 
-    With engaging sessions, live interactions, and immersive experiences, events encourage participation and inspire new ways of thinking. They allow attendees to gain valuable insights while connecting with professionals and communities.
+        </div>
 
-    Well-executed events go beyond expectations by creating lasting impressions, strengthening relationships, and delivering experiences that truly resonate with every participant.
-  </p>
-</div>
-     {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+      </section>
 
-  </div>
+      {/* =========================
+          SECTION 3
+      ========================= */}
 
-</section>
+      <section className="conference-section-1">
 
-    <section className="conference-box">
+        <div className="conference-inner">
 
-  <div className="conference-box-inner">
+          {/* CONTENT SIDE */}
+          <div className="conference-wt-50 conference-content">
 
-    {/* LEFT IMAGE */}
-    <div className="conference-box-img">
-      <img src={conference1} alt="Conference Event" />
-    </div>
+            <h4>Delivering Experiences That Inspire Audiences</h4>
 
-    {/* RIGHT CONTENT */}
-    <div className="conference-box-content">
-  <h2>Why Events Are Valuable?</h2>
+            <p>
+              Experiential marketing is about creating real moments
+              that audiences can see, feel, and remember.
+            </p>
 
-  <p>
-    Events create opportunities for people to come together, share ideas, and build meaningful connections in an engaging environment.
-  </p>
+            <p>
+              Our team combines creativity, innovation, and strategy
+              to deliver engaging experiences that strengthen customer
+              loyalty and brand recognition.
+            </p>
 
-  <p>
-    They provide a space for learning, collaboration, and interaction across different industries and communities.
-  </p>
+            <ul>
+              <li>Innovative experiential marketing strategies</li>
+              <li>Creative audience interaction activities</li>
+              <li>Immersive storytelling experiences</li>
+              <li>Technology-enhanced event engagement</li>
+              <li>Smooth event coordination and execution</li>
+              <li>End-to-end experiential event support</li>
+            </ul>
 
-  <p>
-    By bringing people and ideas together, events help inspire growth, innovation, and new possibilities.
-  </p>
-</div>
+          </div>
 
-  </div>
+          {/* IMAGE SIDE */}
+          <div className="conference-wt-50 conference-img">
+            <img src={exp4} alt="Experiential Activities" />
+          </div>
 
-</section>
+        </div>
+
+      </section>
+
+      {/* =========================
+          FINAL SECTION
+      ========================= */}
+
+      <section className="conference-box">
+
+        <div className="conference-box-inner">
+
+          {/* LEFT IMAGE */}
+          <div className="conference-box-img">
+            <img src={exp8} alt="Experiential Marketing Event" />
+          </div>
+
+          {/* RIGHT CONTENT */}
+          <div className="conference-box-content">
+
+            <h2>Why Choose Our Experiential Marketing Services?</h2>
+
+            <p>
+              We create engaging experiential events that combine
+              creativity, innovation, and audience interaction to
+              build strong emotional brand connections.
+            </p>
+
+            <ul>
+              <li>Creative experiential marketing solutions</li>
+              <li>Customized audience engagement experiences</li>
+              <li>Innovative immersive event concepts</li>
+              <li>Professional planning and coordination</li>
+              <li>Technology-driven event experiences</li>
+              <li>Memorable experiences that increase brand loyalty</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
 

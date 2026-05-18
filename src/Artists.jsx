@@ -1,95 +1,79 @@
-// ConferenceSection.jsx
 
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
+import ar1 from "./assets/ar1.jpg";
+import ar2 from "./assets/ar2.jpg";
+import ar3 from "./assets/ar3.jpg";
+import ar4 from "./assets/ar4.jpg";
+import a9 from "./assets/a9.jpeg";
+import ar6 from "./assets/ar6.jpg";
+import ar8 from "./assets/ar8.jpg";
+import ar9 from "./assets/ar9.jpg";
+import ar13 from './assets/ar13.jpg'
+import ar14 from './assets/ar14.jpg'
+import b1 from './assets/b1.jpeg'
+import ar15 from './assets/ar15.jpg'
+import ar11 from './assets/ar11.jpg'
+import ar10 from './assets/ar10.jpg'
+import ar7 from './assets/ar7.jpg'
+import ar16 from './assets/ar16.jpg'
+import ar18 from './assets/ar18.jpg'
 
-import conference1 from "./assets/conferenc1.jpg";
-import conference2 from "./assets/conference2.jpg";
-import conference3 from './assets/conference3.png'
-import conference4 from './assets/conference4.jpg'
-//image grid list
-import conference5 from './assets/conference5.png'
-import conference6 from './assets/conference6.png'
-import conference7 from './assets/conference7.png'
-import conference8 from './assets/conference8.png'
-import conference9 from './assets/conference9.png'
-import conference10 from './assets/conference10.png'
-import conference11 from './assets/conference11.png'
-import conference12 from './assets/conference12.png'
-import conference13 from './assets/conference13.png'
+
+
+
 import Solutions from "./Solution";
 
-export default function Artists() {
-  //All images
+export default function ArtistsEntertainment() {
 
   const imagelist = [
     {
-      img: conference5,
-      title: "Tech Conference",
-      desc: "This conference highlights innovative technologies, expert talks, networking sessions, and future trends shaping the digital world.",
+      img: ar13,
+      title: "Celebrity & Artist Management",
     },
     {
-      img: conference6,
-      title: "Business Summit",
-      desc: "A professional gathering focused on business growth, investment strategies, leadership insights, and global market expansion.",
+      img: b1,
+      title: "Live Concert Production",
     },
     {
-      img: conference7,
-      title: "Developer Meetup",
-      desc: "An engaging event for developers to explore modern frameworks, coding practices, real-world applications, and collaboration opportunities.",
+      img: ar14,
+      title: "DJ & Music Entertainment",
     },
     {
-      img: conference8,
-      title: "Startup Expo",
-      desc: "A platform for startups to showcase ideas, connect with investors, learn scaling strategies, and build meaningful partnerships.",
+      img: ar15,
+      title:"Live Audience Engagement",
     },
     {
-      img: conference9,
-      title: "AI & Innovation",
-      desc: "Focused on artificial intelligence, machine learning, automation, and how innovation is transforming industries worldwide.",
+      img: ar11,
+      title: "Dance & Cultural Shows",
     },
     {
-      img: conference10,
-      title: "Marketing Conference",
-      desc: "Covers digital marketing trends, branding strategies, audience engagement, and data-driven marketing techniques.",
+      img: ar18,
+      title: "Anchor & Host Coordination",
     },
     {
-      img: conference11,
-      title: "Leadership Summit",
-      desc: "An inspiring event about leadership skills, team management, decision-making, and building strong organizational culture.",
+      img: ar10,
+      title: "Stage Performance Management",
     },
     {
-      img: conference12,
-      title: "Design Workshop",
-      desc: "A creative space for designers to explore UI/UX trends, design thinking, prototyping, and user-centered design approaches.",
+      img: ar16,
+      title: "Sound, Light & Special Effects",
     },
     {
-      img: conference13,
-      title: "Global Tech Expo",
-      desc: "A large-scale exhibition featuring cutting-edge technologies, product demos, industry leaders, and global networking opportunities.",
+      img: ar7,
+      title: "Entertainment Show Production",
     },
-    // {
-    //   img: conference5,
-    //   title: "Tech Conference",
-    //   desc: "This conference focuses on innovative ideas, networking opportunities, expert speakers, and future technology trends shaping the industry.",
-    // },
-
-
   ];
 
-
-  // BANNER IMAGES
   const images = [
-    conference2,
-    conference3,
-    conference4,
-
+    ar1,
+    ar2,
+    ar3,
+    ar4,
   ];
 
-  // CURRENT IMAGE
   const [currentImage, setCurrentImage] = useState(0);
 
-  // AUTO SLIDE
   useEffect(() => {
 
     const slider = setInterval(() => {
@@ -107,10 +91,15 @@ export default function Artists() {
   }, [images.length]);
 
   return (
+
     <div>
+
       <section className="conference-section">
+
         <div className="conference-image">
+
           {images.map((img, index) => (
+
             <img
               key={index}
               src={img}
@@ -121,117 +110,152 @@ export default function Artists() {
                   : "slider-image"
               }
             />
+
           ))}
+                    <h1> Artists and Entertainment</h1>
+         
+<h5 className="orbit-text">
+  <span className="red-o">O</span>
+  <span className="black-text">RBIT</span>
+  <span className="white-text"> events and experiences</span>
+</h5>
+
         </div>
+
       </section>
 
       <section className="conference-section-1">
 
-  <div className="conference-inner">
+        <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+          <div className="conference-wt-50 conference-img">
+            <img src={a9} alt="Artists And Entertainment" />
+          </div>
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Celebrating Talent, Creating Entertainment</h4>
-  <p>
-    Artist and entertainment events are vibrant experiences that bring creativity, talent, and performance to life. They provide a platform for artists, performers, and entertainers to showcase their skills and connect with audiences.
+          <div className="conference-wt-50 conference-content">
 
-    From live music and stage performances to cultural shows and interactive entertainment, these events create an energetic atmosphere filled with excitement and engagement. They offer audiences a chance to experience art, music, and creativity in its most dynamic form.
+            <h4>Bringing Talent, Music & Entertainment Together</h4>
 
-    By blending performance and passion, entertainment events create unforgettable moments, leaving audiences inspired, engaged, and entertained.
-  </p>
-</div>
+            <p>
+              Artists and entertainment events are designed to create energetic,
+              engaging, and unforgettable experiences for audiences of every size.
+              These events combine creativity, live performances, and immersive
+              entertainment to deliver moments filled with excitement and emotion.
+            </p>
 
-  </div>
+            <ul>
+              <li>Live music concerts and celebrity performances</li>
+              <li>Professional stage shows and entertainment acts</li>
+              <li>Interactive audience engagement experiences</li>
+              <li>Creative production and artist coordination</li>
+            </ul>
 
-</section>
+          </div>
+
+        </div>
+
+      </section>
+
       <section>
         <Solutions imagelist={imagelist} />
       </section>
-       
-  <section className="conference-section-1">
 
-  <div className="conference-inner">
+      <section className="conference-section-1">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+        <div className="conference-inner">
 
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Where Creativity Meets Entertainment</h4>
-  <p>
-    Artist and entertainment events bring together creativity, performance, and passion to deliver unforgettable experiences. These events are designed to captivate audiences through music, art, and live performances.
+          <div className="conference-wt-50 conference-img">
+            <img src={ar8} alt="Entertainment Events" />
+          </div>
 
-    From concerts and cultural shows to interactive entertainment and stage acts, every moment is crafted to engage and inspire. They provide a platform for artists to express their talent while creating a vibrant connection with the audience.
+          <div className="conference-wt-50 conference-content">
 
-    By combining energy, creativity, and experience, entertainment events leave lasting impressions and create moments that audiences cherish long after the event ends.
-  </p>
-</div>
+            <h4>Creating Unforgettable Entertainment Experiences</h4>
 
-  </div>
+            <p>
+              Entertainment events are crafted to inspire audiences through music,
+              creativity, performances, and interactive experiences. From concerts
+              and cultural programs to live performances and stage productions,
+              every event is carefully planned to create excitement and engagement.
+            </p>
 
-</section>
-  <section className="conference-section-1">
+            <ul>
+              <li>Concerts, DJ nights, and musical performances</li>
+              <li>Cultural shows and artistic stage productions</li>
+              <li>Audience-focused entertainment experiences</li>
+              <li>Creative lighting, sound, and visual effects</li>
+            </ul>
 
-  <div className="conference-inner">
+          </div>
 
-   
+        </div>
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Bringing Entertainment to Life</h4>
-  <p>
-    Entertainment events are designed to create exciting and immersive experiences that captivate audiences and celebrate creativity. They bring together performers, artists, and audiences in a vibrant and engaging environment.
+      </section>
 
-    From live performances and music shows to interactive acts and cultural experiences, these events are filled with energy and expression. They offer a platform for talent to shine while delivering unforgettable moments to the audience.
+     <section className="conference-section-1">
 
-    With creativity at the core, entertainment events turn every moment into a celebration, leaving lasting memories and joyful experiences for everyone involved.
-  </p>
-</div>
-     {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+        <div className="conference-inner">
 
-  </div>
+          <div className="conference-wt-50 conference-content">
 
-</section>
+            <h4>Transforming Events Into Spectacular Celebrations</h4>
 
-    <section className="conference-box">
+            <p>
+              Artist and entertainment management focuses on delivering memorable
+              experiences through high-energy performances and creative event
+              execution. Every detail is designed to create a vibrant atmosphere
+              that keeps audiences entertained and engaged throughout the event.
+            </p>
 
-  <div className="conference-box-inner">
+            <ul>
+              <li>Artist management and performance coordination</li>
+              <li>Customized entertainment concepts for events</li>
+              <li>Professional event production and stage setup</li>
+              <li>Memorable audience experiences and engagement</li>
+            </ul>
 
-    {/* LEFT IMAGE */}
-    <div className="conference-box-img">
-      <img src={conference1} alt="Conference Event" />
-    </div>
+          </div>
 
-    {/* RIGHT CONTENT */}
-   <div className="conference-box-content">
-  <h2>Why Entertainment Events?</h2>
+          <div className="conference-wt-50 conference-img">
+            <img src={ar9} alt="Live Entertainment" />
+          </div>
 
-  <p>
-    Entertainment events bring people together to enjoy creativity, performances, and unforgettable experiences in a vibrant atmosphere.
-  </p>
+        </div>
 
-  <p>
-    They provide a platform for artists and performers to showcase their talent while engaging and connecting with audiences.
-  </p>
+      </section>
 
-  <p>
-    These events create moments of joy, excitement, and inspiration, leaving lasting memories for everyone involved.
-  </p>
-</div>
+      <section className="conference-box">
 
-  </div>
+        <div className="conference-box-inner">
 
-</section>
+          <div className="conference-box-img">
+            <img src={ar6} alt="Entertainment Event" />
+          </div>
+
+          <div className="conference-box-content">
+
+            <h2>Why Choose Artists & Entertainment Events?</h2>
+
+            <p>
+              Entertainment events create exciting experiences that connect people
+              through music, creativity, performances, and live interactions.
+            </p>
+
+            <p>
+              They provide a platform for artists and performers to showcase their
+              talent while delivering memorable moments for audiences.
+            </p>
+
+            <p>
+              From concerts and cultural programs to stage performances and live
+              entertainment, these events create energy, excitement, and lasting memories.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
 

@@ -6,7 +6,7 @@ export default function Solution({ imagelist }) {
     <section className="solutions-section">
       <div className="solutions-container">
 
-        {/* TOP TAG */}
+       
       <div className="solutions-tag">
   <h2 className="solutions-heading">
     Our Event Management Solutions
@@ -18,10 +18,10 @@ export default function Solution({ imagelist }) {
   </p>
 </div>
 
-        {/* HEADING */}
+   
       
 
-        {/* GRID */}
+  
         <div className="solutions-grid">
           {imagelist.map((item) => (
             <div className="solution-card" key={item.id}>

@@ -1,6 +1,7 @@
 // AboutSection.jsx
 import React from "react";
 import "./AboutSection.css";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   const cards = [
@@ -42,11 +43,11 @@ export default function AboutSection() {
             attention to detail, and personalised event planning services that
             exceed your expectations.
           </p>
-
-          <button>Get In Touch</button>
+<button>
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
 
-        {/* RIGHT CONTENT */}
         <div className="about-right">
           <div className="circle-bg"></div>
 

@@ -1,9 +1,8 @@
-// ProcessSection.jsx
+
 
 import React from "react";
 import "./Process.css";
 
-// ICONS
 import {
   CalendarCheck,
   Palette,
@@ -51,7 +50,6 @@ export default function ProcessSection() {
 
     <section className="process-section">
 
-      {/* HEADER */}
       <div className="process-header">
 
         <span className="tag">
@@ -69,10 +67,8 @@ export default function ProcessSection() {
 
       </div>
 
-      {/* TIMELINE */}
       <div className="timeline-line"></div>
 
-      {/* PROCESS */}
       <div className="process-grid">
 
         {processData.map((item, index) => (
@@ -85,7 +81,6 @@ export default function ProcessSection() {
             }}
           >
 
-            {/* TOP ICON */}
             <div className="top-design">
 
               <div className="number-circle">
@@ -98,7 +93,6 @@ export default function ProcessSection() {
 
             </div>
 
-            {/* CONTENT */}
             <div className="card-content">
 
               <h2>{item.title}</h2>

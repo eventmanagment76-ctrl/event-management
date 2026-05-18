@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-/* TAG */
+
 .solutions-tag {
   display: inline-block;
   background: #e6f0ff;
@@ -25,7 +25,7 @@
   margin-bottom: 10px;
 }
 
-/* HEADING */
+
 .solutions-heading {
   font-size: 32px;
   font-weight: 700;
@@ -33,7 +33,6 @@
   color: #f80606;
 }
 
-/* GRID */
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,7 +40,6 @@
 
 }
 
-/* CARD */
 .solution-card {
   background: #fff;
   border-radius: 16px;
@@ -51,13 +49,12 @@
   text-align: left;
 }
 
-/* HOVER EFFECT */
+
 .solution-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* IMAGE */
 .solution-image-wrapper {
   overflow: hidden;
   border-radius: 12px;
@@ -71,12 +68,12 @@
   transition: transform 0.4s ease;
 }
 
-/* IMAGE ZOOM */
+
 .solution-card:hover .solution-image {
   transform: scale(1.05);
 }
 
-/* TITLE */
+
 .solution-title {
   font-size: 18px;
   font-weight: 600;
@@ -85,7 +82,7 @@
   text-align: center;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 992px) {
   .solutions-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -104,7 +101,7 @@
 .solutions-tag {
   text-align: center;
   padding: 60px 20px;
-  background: none; /* deep navy */
+  background: none; 
 }
 
 .solutions-heading {
@@ -119,7 +116,7 @@
   content: "";
   width:60%;
   height: 3px;
-  background: #4d16ce;
+  background: #d4010c;
   display: block;
   margin: 10px auto 0;
   border-radius: 2px;

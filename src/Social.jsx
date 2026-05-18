@@ -3,93 +3,83 @@
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
 
-import conference1 from "./assets/conferenc1.jpg";
-import conference2 from "./assets/conference2.jpg";
-import conference3 from './assets/conference3.png'
-import conference4 from './assets/conference4.jpg'
-//image grid list
-import conference5 from './assets/conference5.png'
-import conference6 from './assets/conference6.png'
-import conference7 from './assets/conference7.png'
-import conference8 from './assets/conference8.png'
-import conference9 from './assets/conference9.png'
-import conference10 from './assets/conference10.png'
-import conference11 from './assets/conference11.png'
-import conference12 from './assets/conference12.png'
-import conference13 from './assets/conference13.png'
+import c1 from "./assets/c1.jpeg";
+import b9 from "./assets/b9.jpeg";
+import a7 from "./assets/a7.jpeg";
+import d3 from "./assets/d3.jpeg";
+import a6 from "./assets/a6.jpeg";
+import b3 from "./assets/b3.jpeg";
+import d8 from "./assets/d8.jpeg";
+import b4 from "./assets/b4.jpeg";
+import c8 from "./assets/c8.jpeg";
+import b5 from "./assets/b5.jpeg";
+import b6 from "./assets/b6.jpeg";
+import b7 from "./assets/b7.jpeg";
+import b8 from "./assets/b8.jpeg";
+import c5 from "./assets/c5.jpeg";
+import c6 from "./assets/c6.jpeg";
+import c7 from "./assets/c7.jpeg";
+import c10 from "./assets/c10.jpeg";
+import c9 from "./assets/c9.jpeg";
+
 import Solutions from "./Solution";
 
 export default function Social() {
-  //All images
+
+  
 
   const imagelist = [
     {
-      img: conference5,
-      title: "Tech Conference",
-      desc: "This conference highlights innovative technologies, expert talks, networking sessions, and future trends shaping the digital world.",
+      img: b5,
+      title: "Wedding & Reception Planning",
     },
     {
-      img: conference6,
-      title: "Business Summit",
-      desc: "A professional gathering focused on business growth, investment strategies, leadership insights, and global market expansion.",
+      img: b6,
+      title: "Birthday & Private Celebrations",
     },
     {
-      img: conference7,
-      title: "Developer Meetup",
-      desc: "An engaging event for developers to explore modern frameworks, coding practices, real-world applications, and collaboration opportunities.",
+      img: b7,
+      title:"Engagement Ceremony Setup",
     },
     {
-      img: conference8,
-      title: "Startup Expo",
-      desc: "A platform for startups to showcase ideas, connect with investors, learn scaling strategies, and build meaningful partnerships.",
+      img: b8,
+      title: "Luxury Venue Decoration",
     },
     {
-      img: conference9,
-      title: "AI & Innovation",
-      desc: "Focused on artificial intelligence, machine learning, automation, and how innovation is transforming industries worldwide.",
+      img: c5,
+      title: "Stage, Sound & Lighting",
     },
     {
-      img: conference10,
-      title: "Marketing Conference",
-      desc: "Covers digital marketing trends, branding strategies, audience engagement, and data-driven marketing techniques.",
+      img: c6,
+      title: "Catering & Hospitality Management",
     },
     {
-      img: conference11,
-      title: "Leadership Summit",
-      desc: "An inspiring event about leadership skills, team management, decision-making, and building strong organizational culture.",
+      img: c7,
+      title: "Guest Coordination Services",
     },
     {
-      img: conference12,
-      title: "Design Workshop",
-      desc: "A creative space for designers to explore UI/UX trends, design thinking, prototyping, and user-centered design approaches.",
+      img: c8,
+      title: "Traditional & Theme Events",
     },
     {
-      img: conference13,
-      title: "Global Tech Expo",
-      desc: "A large-scale exhibition featuring cutting-edge technologies, product demos, industry leaders, and global networking opportunities.",
+      img: c9,
+      title: "Entertainment & DJ Services",
     },
-    // {
-    //   img: conference5,
-    //   title: "Tech Conference",
-    //   desc: "This conference focuses on innovative ideas, networking opportunities, expert speakers, and future technology trends shaping the industry.",
-    // },
-
-
   ];
 
 
-  // BANNER IMAGES
+
   const images = [
-    conference2,
-    conference3,
-    conference4,
-
+    c1,
+    b9,
+    a7,
+    d3,
   ];
 
-  // CURRENT IMAGE
+ 
   const [currentImage, setCurrentImage] = useState(0);
 
-  // AUTO SLIDE
+ 
   useEffect(() => {
 
     const slider = setInterval(() => {
@@ -107,10 +97,17 @@ export default function Social() {
   }, [images.length]);
 
   return (
+
     <div>
+
+    
+
       <section className="conference-section">
+
         <div className="conference-image">
+
           {images.map((img, index) => (
+
             <img
               key={index}
               src={img}
@@ -121,119 +118,191 @@ export default function Social() {
                   : "slider-image"
               }
             />
+
           ))}
+                    <h1> Social and Wedding</h1>
+         
+<h5 className="orbit-text">
+  <span className="red-o">O</span>
+  <span className="black-text">RBIT</span>
+  <span className="white-text"> events and experiences</span>
+</h5>
+
         </div>
+
       </section>
+
+    
 
       <section className="conference-section-1">
 
-  <div className="conference-inner">
+        <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+          
+          <div className="conference-wt-50 conference-img">
+            <img src={b3} alt="Wedding Event" />
+          </div>
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Celebrating Moments, Creating Memories</h4>
-  <p>
-    Social and wedding events are beautifully crafted occasions that bring people together to celebrate love, joy, and special milestones. These events are designed to create unforgettable experiences filled with emotion and happiness.
+          
+          <div className="conference-wt-50 conference-content">
 
-    From elegant décor and personalized themes to engaging ceremonies and entertainment, every detail is thoughtfully planned to reflect the unique story of the celebration. They provide a space for families and friends to connect, celebrate, and create lasting memories.
+            <h4>Creating Beautiful Wedding Celebrations</h4>
 
-    With the perfect blend of creativity and planning, social and wedding events turn special moments into timeless experiences that are cherished forever.
-  </p>
-</div>
+            <p>
+              Our social and wedding events are thoughtfully designed
+              to transform special occasions into unforgettable memories
+              filled with elegance, joy, and meaningful experiences.
+            </p>
 
-  </div>
+            <p>
+              From intimate ceremonies to grand celebrations,
+              every detail is planned with creativity and perfection
+              to reflect your vision and style.
+            </p>
 
-</section>
+            <ul>
+              <li>Luxury wedding planning and coordination</li>
+              <li>Elegant décor and theme arrangements</li>
+              <li>Reception and engagement event management</li>
+              <li>Entertainment and guest experience planning</li>
+              <li>Customized social celebration concepts</li>
+              <li>Complete event execution support</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+ 
+
       <section>
         <Solutions imagelist={imagelist} />
       </section>
+
+  
+
+      <section className="conference-section-1">
+
+        <div className="conference-inner">
+
        
-  <section className="conference-section-1">
+          <div className="conference-wt-50 conference-img">
+            <img src={a6} alt="Social Event" />
+          </div>
 
-  <div className="conference-inner">
+          <div className="conference-wt-50 conference-content">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+            <h4>Turning Special Moments Into Lasting Memories</h4>
 
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Creating Moments That Bring People Together</h4>
-  <p>
-    Events are thoughtfully designed experiences that bring people together to celebrate, connect, and share meaningful moments. They create an atmosphere where ideas, emotions, and experiences come alive.
+            <p>
+              Social and wedding celebrations are more than just events —
+              they are emotional experiences shared with family,
+              friends, and loved ones.
+            </p>
 
-    Through engaging activities, live interactions, and carefully planned experiences, events encourage participation and connection. They offer opportunities to discover new perspectives and build lasting relationships.
+            <p>
+              Through personalized planning, creative styling,
+              and seamless execution, we create celebrations
+              that feel unique, elegant, and unforgettable.
+            </p>
 
-    Every event is a chance to create something memorable, leaving a lasting impression that resonates with every individual involved.
-  </p>
-</div>
+            <ul>
+              <li>Creative wedding and social event concepts</li>
+              <li>Personalized décor and styling solutions</li>
+              <li>Guest hospitality and coordination services</li>
+              <li>Music, entertainment, and stage management</li>
+              <li>Photography and memorable experience planning</li>
+              <li>Professional event coordination support</li>
+            </ul>
 
-  </div>
+          </div>
 
-</section>
-  <section className="conference-section-1">
+        </div>
 
-  <div className="conference-inner">
+      </section>
 
-   
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Bringing Ideas to Life Through Events</h4>
-  <p>
-    Events are powerful experiences that bring people together to share ideas, celebrate moments, and create meaningful connections. They offer a vibrant platform where creativity and collaboration come together.
+      <section className="conference-section-1">
 
-    With a blend of engaging sessions, live experiences, and interactive moments, events inspire participation and open doors to new opportunities. They allow individuals to connect, learn, and grow in an engaging environment.
+        <div className="conference-inner">
 
-    Every well-planned event creates lasting impressions, turning simple gatherings into impactful and memorable experiences.
-  </p>
-</div>
-     {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+         
+          <div className="conference-wt-50 conference-content">
 
-  </div>
+            <h4>Designing Celebrations Filled With Joy</h4>
 
-</section>
+            <p>
+              Every wedding and social gathering deserves
+              beautiful arrangements, smooth planning,
+              and memorable experiences that bring people together.
+            </p>
 
-    <section className="conference-box">
+            <p>
+              Our team combines creativity, elegance,
+              and attention to detail to deliver celebrations
+              that create lasting impressions.
+            </p>
 
-  <div className="conference-box-inner">
+            <ul>
+              <li>Elegant wedding and social event setups</li>
+              <li>Creative theme and décor execution</li>
+              <li>Luxury venue and stage arrangements</li>
+              <li>Interactive guest engagement experiences</li>
+              <li>Smooth event management and coordination</li>
+              <li>Memorable celebrations tailored to your vision</li>
+            </ul>
 
-    {/* LEFT IMAGE */}
-    <div className="conference-box-img">
-      <img src={conference1} alt="Conference Event" />
-    </div>
+          </div>
 
-    {/* RIGHT CONTENT */}
-  <div className="conference-box-content">
-  <h2>Why Choose Events?</h2>
+       
+          <div className="conference-wt-50 conference-img">
+            <img src={c10} alt="Wedding Celebration" />
+          </div>
 
-  <p>
-    Events bring people together in a meaningful way, creating opportunities to connect, share ideas, and build strong relationships.
-  </p>
+        </div>
 
-  <p>
-    They provide a dynamic platform for collaboration, learning, and interaction across various industries and communities.
-  </p>
+      </section>
 
-  <p>
-    Through engaging experiences and shared moments, events inspire growth, innovation, and lasting connections.
-  </p>
-</div>
+    
 
-  </div>
+      <section className="conference-box">
 
-</section>
+        <div className="conference-box-inner">
+
+         
+          <div className="conference-box-img">
+            <img src={b4} alt="Social Wedding Event" />
+          </div>
+
+          <div className="conference-box-content">
+
+            <h2>Why Choose Our Social & Wedding Event Services?</h2>
+
+            <p>
+              We create elegant and unforgettable social and wedding
+              celebrations designed with creativity, emotion,
+              and flawless execution.
+            </p>
+
+            <ul>
+              <li>Personalized wedding and event planning</li>
+              <li>Creative décor and luxury styling concepts</li>
+              <li>Professional coordination and guest management</li>
+              <li>Customized entertainment experiences</li>
+              <li>Beautiful venue and stage arrangements</li>
+              <li>Stress-free planning with memorable celebrations</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
 
     </div>
 
   );
+
 }

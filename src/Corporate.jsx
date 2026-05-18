@@ -3,72 +3,102 @@
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
 
-import conference1 from "./assets/conferenc1.jpg";
-import conference2 from "./assets/conference2.jpg";
-import conference3 from './assets/conference3.png'
-import conference4 from './assets/conference4.jpg'
-//image grid list
-import conference5 from './assets/conference5.png'
-import conference6 from './assets/conference6.png'
-import conference7 from './assets/conference7.png'
-import conference8 from './assets/conference8.png'
-import conference9 from './assets/conference9.png'
-import conference10 from './assets/conference10.png'
-import conference11 from './assets/conference11.png'
-import conference12 from './assets/conference12.png'
-import conference13 from './assets/conference13.png'
+import h10 from "./assets/h10.jpeg";
+import j10 from "./assets/j10.jpeg"
+import l10 from "./assets/l10.jpeg";
+import m2 from "./assets/m2.jpeg";
+import i3 from "./assets/i3.jpeg";
+// IMAGE GRID LIST
+import i8 from "./assets/i8.jpeg";
+import i9 from "./assets/i9.jpeg";
+import i5 from "./assets/i5.jpeg";
+
+import orbit2 from "./assets/orbit2.jpg";
+import m4 from "./assets/m4.jpeg";
+import k6 from "./assets/k6.jpeg";
+import k4 from "./assets/k4.jpeg";
+import conference12 from "./assets/conference12.png";
+import conference8 from "./assets/conference8.png";
+import conference10 from "./assets/conference10.png";
+import conference11 from "./assets/conference11.png";
+import conference13 from "./assets/conference13.png";
+
+
+
+
+
+
+
+
+
 import Solutions from "./Solution";
+import { title } from "framer-motion/client";
+import { time } from "framer-motion";
 
 export default function Corporate() {
-  //All images
 
+  // ALL IMAGES
   const imagelist = [
-  {
-    img: conference5,
-    title: "Corporate Tech Event",
-    desc: "A corporate event focused on emerging technologies, expert discussions, innovation trends, and digital transformation strategies.",
-  },
-  {
-    img: conference6,
-    title: "Corporate Business Summit",
-    desc: "A high-level corporate gathering for business growth strategies, leadership development, investment planning, and global networking.",
-  },
-  {
-    img: conference7,
-    title: "Corporate Developer Meetup",
-    desc: "A corporate tech meetup for developers to share knowledge, explore frameworks, discuss solutions, and collaborate on real-world projects.",
-  },
-  {
-    img: conference8,
-    title: "Corporate Startup Expo",
-    desc: "A corporate platform where startups present ideas, connect with investors, and explore scaling and partnership opportunities.",
-  },
-  {
-    img: conference9,
-    title: "Corporate AI & Innovation Forum",
-    desc: "A corporate-focused event on AI, machine learning, automation, and innovation shaping the future of industries.",
-  },
-  {
-    img: conference10,
-  },
-  {
-    img: conference11,
-  },
-  {
-    img: conference12,
-  },
-  {
-    img: conference13,
-  },
-];
+    {
+      img: i5,
+      title: "Corporate Tech Event",
+      desc: "A corporate event focused on emerging technologies, expert discussions, innovation trends, and digital transformation strategies.",
+    },
 
+    {
+      img: i9,
+      title: "Corporate Business Summit",
+      desc: "A high-level corporate gathering for business growth strategies, leadership development, investment planning, and global networking.",
+    },
+
+    {
+      img: conference12,
+      title: "Corporate Developer Meetup",
+      desc: "A corporate tech meetup for developers to share knowledge, explore frameworks, discuss solutions, and collaborate on real-world projects.",
+    },
+
+    {
+      img: conference8,
+      title: "Corporate Startup Expo",
+      desc: "A corporate platform where startups present ideas, connect with investors, and explore scaling and partnership opportunities.",
+    },
+
+    {
+      img: i8,
+      title: "Corporate AI & Innovation Forum",
+      desc: "A corporate-focused event on AI, machine learning, automation, and innovation shaping the future of industries.",
+    },
+
+    {
+      img: conference10,
+      title:"corporate growth summit",
+    },
+
+    {
+      img: conference11,
+      title:"innovation meetup",
+    },
+
+    {
+      img: orbit2,
+      title:"Annual meetup",
+    },
+
+    {
+      img: conference13,
+      title:"Networking event",
+      
+    },
+  ];
 
   // BANNER IMAGES
   const images = [
-    conference2,
-    conference3,
-    conference4,
-
+    l10,
+    j10,
+    i3,
+    m2,
+    
+    
   ];
 
   // CURRENT IMAGE
@@ -93,9 +123,14 @@ export default function Corporate() {
 
   return (
     <div>
+
+      {/* BANNER SECTION */}
       <section className="conference-section">
+
         <div className="conference-image">
+
           {images.map((img, index) => (
+
             <img
               key={index}
               src={img}
@@ -106,119 +141,173 @@ export default function Corporate() {
                   : "slider-image"
               }
             />
+
           ))}
+                    <h1> corporate Managment</h1>
+         
+<h5 className="orbit-text">
+  <span className="red-o">O</span>
+  <span className="black-text">RBIT</span>
+  <span className="white-text"> events and experiences</span>
+</h5>
+
         </div>
+
       </section>
 
+      {/* SECTION 1 */}
       <section className="conference-section-1">
 
-  <div className="conference-inner">
+        <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+          {/* IMAGE SIDE */}
+          <div className="conference-wt-50 conference-img">
+            <img src={i3} alt="Conference Event" />
+          </div>
 
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Empowering Corporate Events, Inspiring Connections</h4>
-  <p>
-    A corporate event is a professionally organized gathering designed to bring together business leaders, industry experts, employees, and stakeholders to exchange ideas, strategies, and insights. It serves as a powerful platform for networking, collaboration, and business growth across various industries.
+          {/* CONTENT SIDE */}
+          <div className="conference-wt-50 conference-content">
 
-    Corporate events often include keynote presentations, panel discussions, leadership talks, workshops, and interactive sessions that deliver valuable knowledge and real-world business perspectives. Participants gain exposure to the latest market trends, innovations, and technologies shaping the corporate world.
+            <h4>Transforming Corporate Events Into Powerful Experiences</h4>
 
-    These events help organizations strengthen relationships, build brand value, and encourage strategic partnerships that drive long-term success.
-  </p>
-</div>
+            <p>
+              We create professional corporate events that combine
+              innovation, creativity, and flawless execution to deliver
+              unforgettable business experiences.
+            </p>
 
-  </div>
+            <ul>
+              <li>Professional conference and seminar management</li>
+              <li>Corporate annual meets and award ceremonies</li>
+              <li>Product launches with impactful stage experiences</li>
+              <li>High-quality audio, lighting, and LED setup</li>
+              <li>Guest management and hospitality coordination</li>
+              <li>Creative branding and event production solutions</li>
+              <li>Smooth execution with dedicated event support</li>
+            </ul>
 
-</section>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* SOLUTIONS */}
       <section>
         <Solutions imagelist={imagelist} />
       </section>
-       
-  <section className="conference-section-1">
 
-  <div className="conference-inner">
+      {/* SECTION 2 */}
+      <section className="conference-section-1">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
+        <div className="conference-inner">
+
+          {/* IMAGE SIDE */}
+          <div className="conference-wt-50 conference-img">
+            <img src={m4} alt="Conference Event" />
+          </div>
+
+          {/* CONTENT SIDE */}
+          <div className="conference-wt-50 conference-content">
+
+            <h4>Creating Business Events That Inspire Connections</h4>
+
+            <p>
+              Our corporate event solutions are designed to help businesses
+              connect, collaborate, and grow through engaging and
+              professionally managed experiences.
+            </p>
+
+            <ul>
+              <li>Strategic event planning and execution</li>
+              <li>Customized stage and venue design concepts</li>
+              <li>Interactive audience engagement activities</li>
+              <li>Corporate networking and leadership events</li>
+              <li>Exhibition and business expo management</li>
+              <li>Technical support with seamless coordination</li>
+              <li>End-to-end event branding and promotions</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* SECTION 3 */}
+      <section className="conference-section-1">
+
+        <div className="conference-inner">
+
+          {/* CONTENT SIDE */}
+          <div className="conference-wt-50 conference-content">
+
+            <h4>Delivering Memorable Corporate Event Experiences</h4>
+
+            <p>
+              We specialize in creating dynamic corporate events that blend
+              professionalism with creativity and innovation for impactful
+              audience engagement.
+            </p>
+
+            <ul>
+              <li>Innovative event concepts tailored to your brand</li>
+              <li>Corporate team-building activities</li>
+              <li>Seamless conference and summit coordination</li>
+              <li>Premium hospitality and guest experience</li>
+              <li>Live entertainment and stage management</li>
+              <li>Professional event marketing and promotions</li>
+              <li>Reliable execution with attention to detail</li>
+            </ul>
+
+          </div>
+
+          {/* IMAGE SIDE */}
+          <div className="conference-wt-50 conference-img">
+            <img src={k6} alt="Conference Event" />
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* WHY SECTION */}
+      <section className="conference-box">
+
+        <div className="conference-box-inner">
+
+          {/* LEFT IMAGE */}
+          <div className="conference-box-img">
+            <img src={k4} alt="Conference Event" />
+          </div>
+
+          {/* RIGHT CONTENT */}
+          <div className="conference-box-content">
+
+            <h2>Why Choose Our Corporate Event Services?</h2>
+
+            <p>
+              We provide complete event management solutions that combine
+              creativity, technology, and professional execution to deliver
+              successful corporate experiences.
+            </p>
+
+            <ul>
+              <li>Experienced and professional event management team</li>
+              <li>Customized event solutions for every business need</li>
+              <li>Creative stage design and premium production quality</li>
+              <li>Advanced sound, lighting, and visual technologies</li>
+              <li>Smooth coordination from planning to execution</li>
+              <li>Strong focus on audience engagement and branding</li>
+              <li>Timely delivery with high-quality standards</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </div>
-
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Driving Corporate Excellence Through Events</h4>
-  <p>
-    Corporate events play a vital role in building strong business ecosystems by connecting professionals, organizations, and thought leaders on a single platform. These events are carefully curated to encourage meaningful discussions, strategic thinking, and industry collaboration.
-
-    From leadership summits and product launches to business conferences and networking forums, corporate events provide opportunities to share knowledge, showcase innovations, and explore new business possibilities. They help organizations stay competitive by understanding market trends and evolving customer needs.
-
-    More than just meetings, corporate events create long-lasting relationships that support growth, innovation, and success in the corporate world.
-  </p>
-</div>
-
-  </div>
-
-</section>
-  <section className="conference-section-1">
-
-  <div className="conference-inner">
-
-   
-
-    {/* CONTENT SIDE */}
-   <div className="conference-wt-50 conference-content">
-  <h4>Where Corporate Minds Connect and Grow</h4>
-  <p>
-    Corporate events are dynamic platforms that bring together professionals, innovators, and decision-makers to share insights, explore opportunities, and build meaningful business relationships. They play a key role in shaping strong corporate cultures and fostering collaboration across industries.
-
-    These events include conferences, seminars, workshops, and networking sessions that focus on innovation, leadership, and strategic growth. Participants gain practical knowledge, industry updates, and exposure to real-world business challenges and solutions.
-
-    By uniting diverse perspectives, corporate events help organizations drive innovation, improve performance, and achieve long-term success in a competitive market.
-  </p>
-</div>
-     {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
-
-  </div>
-
-</section>
-
-    <section className="conference-box">
-
-  <div className="conference-box-inner">
-
-    {/* LEFT IMAGE */}
-    <div className="conference-box-img">
-      <img src={conference1} alt="Conference Event" />
-    </div>
-
-    {/* RIGHT CONTENT */}
-   <div className="conference-box-content">
-  <h2>Why Corporate Events?</h2>
-
-  <p>
-    A corporate event is a professionally organized gathering designed to bring together business leaders, industry experts, and professionals on a single platform.
-  </p>
-
-  <p>
-    It serves as a powerful space for networking, collaboration, and knowledge sharing across different industries and business domains.
-  </p>
-
-  <p>
-    Corporate events help individuals and organizations grow by exploring market trends, sharing real-world business experiences, and discovering new opportunities for innovation and success.
-  </p>
-</div>
-
-  </div>
-
-</section>
-
-    </div>
-
   );
 }

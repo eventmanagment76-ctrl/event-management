@@ -1,89 +1,94 @@
-// ConferenceSection.jsx
+// ProductLaunchSection.jsx
 
 import React, { useEffect, useState } from "react";
 import "./Conference.css";
 
-import conference1 from "./assets/conferenc1.jpg";
-import conference2 from "./assets/conference2.jpg";
-import conference3 from './assets/conference3.png'
-import conference4 from './assets/conference4.jpg'
-//image grid list
-import conference5 from './assets/conference5.png'
-import conference6 from './assets/conference6.png'
-import conference7 from './assets/conference7.png'
-import conference8 from './assets/conference8.png'
-import conference9 from './assets/conference9.png'
-import conference10 from './assets/conference10.png'
-import conference11 from './assets/conference11.png'
-import conference12 from './assets/conference12.png'
-import conference13 from './assets/conference13.png'
+import c4 from "./assets/c4.jpeg";
+import c3 from "./assets/c3.jpeg";
+
+import g5 from "./assets/g5.jpeg";
+import marke1 from './assets/marke1.png';
+import l4 from "./assets/l4.jpeg";
+import k9 from "./assets/k9.jpeg";
+import pro3 from "./assets/pro3.webp";
+import pro4 from "./assets/pro4.webp";
+import pro5 from "./assets/pro5.jpg";
+import pro12 from "./assets/pro12.png";
+import pro10 from "./assets/pro10.jpg";
+import pro14 from "./assets/pro14.webp";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import pro7 from './assets/pro7.webp';
+import pro9 from './assets/pro9.webp';
+import pro11 from './assets/pro11.jpg';
+import g1 from './assets/g1.jpeg';
+import g2 from './assets/g2.jpeg';
+import g4 from './assets/g4.jpeg';
+
 import Solutions from "./Solution";
 
-export default function Product() {
-  //All images
+export default function ProductLaunches() {
 
+  // ALL IMAGES
   const imagelist = [
     {
-      img: conference5,
-      title: "Tech Conference",
-      desc: "This conference highlights innovative technologies, expert talks, networking sessions, and future trends shaping the digital world.",
+      img: pro7,
+      title: "Event Conceptualization & Planning",
     },
     {
-      img: conference6,
-      title: "Business Summit",
-      desc: "A professional gathering focused on business growth, investment strategies, leadership insights, and global market expansion.",
+      img: pro9,
+      title: "Venue Selection and Branding",
     },
     {
-      img: conference7,
-      title: "Developer Meetup",
-      desc: "An engaging event for developers to explore modern frameworks, coding practices, real-world applications, and collaboration opportunities.",
+      img: pro11,
+      title: "Advance audio and visual display",
     },
     {
-      img: conference8,
-      title: "Startup Expo",
-      desc: "A platform for startups to showcase ideas, connect with investors, learn scaling strategies, and build meaningful partnerships.",
+      img: pro12,
+      title: "Dynamic Stage Setups and Special Effects",
     },
     {
-      img: conference9,
-      title: "AI & Innovation",
-      desc: "Focused on artificial intelligence, machine learning, automation, and how innovation is transforming industries worldwide.",
+      img: pro10,
+      title: "Live Broadcasting and Hybrid Events",
     },
     {
-      img: conference10,
-      title: "Marketing Conference",
-      desc: "Covers digital marketing trends, branding strategies, audience engagement, and data-driven marketing techniques.",
+      img: pro14,
+      title: "Photography and Videography",
+      desc: "Launch experiences designed to generate buzz, strengthen branding, and maximize audience engagement.",
     },
     {
-      img: conference11,
-      title: "Leadership Summit",
-      desc: "An inspiring event about leadership skills, team management, decision-making, and building strong organizational culture.",
+      img: g1,
+      title: "Sponsor Booths and Branding",
+      desc: "Elegant corporate launch events focused on professionalism, creativity, and successful product introductions.",
     },
     {
-      img: conference12,
-      title: "Design Workshop",
-      desc: "A creative space for designers to explore UI/UX trends, design thinking, prototyping, and user-centered design approaches.",
+      img: g2,
+      title: "Creative Product Showcase",
     },
     {
-      img: conference13,
-      title: "Global Tech Expo",
-      desc: "A large-scale exhibition featuring cutting-edge technologies, product demos, industry leaders, and global networking opportunities.",
+      img: g4,
+      title: "RSVP and Participant Management",
     },
-    // {
-    //   img: conference5,
-    //   title: "Tech Conference",
-    //   desc: "This conference focuses on innovative ideas, networking opportunities, expert speakers, and future technology trends shaping the industry.",
-    // },
-
-
   ];
-
 
   // BANNER IMAGES
   const images = [
-    conference2,
-    conference3,
-    conference4,
-
+    c3,
+    c4,
+    g5,
+    marke1,
   ];
 
   // CURRENT IMAGE
@@ -107,10 +112,16 @@ export default function Product() {
   }, [images.length]);
 
   return (
+
     <div>
+
+      {/* HERO SLIDER */}
       <section className="conference-section">
+
         <div className="conference-image">
+
           {images.map((img, index) => (
+
             <img
               key={index}
               src={img}
@@ -121,119 +132,188 @@ export default function Product() {
                   : "slider-image"
               }
             />
+
           ))}
+                    <h1> Product Launches </h1>
+         
+<h5 className="orbit-text">
+  <span className="red-o">O</span>
+  <span className="black-text">RBIT</span>
+  <span className="white-text"> events and experiences</span>
+</h5>
+
         </div>
+
       </section>
 
+
+      
       <section className="conference-section-1">
 
-  <div className="conference-inner">
+        <div className="conference-inner">
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+      
+          <div className="conference-wt-50 conference-img">
+            <img src={l4} alt="Product Launch Event" />
+          </div>
 
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Showcasing Innovation, Launching Success</h4>
-  <p>
-    A product launch event is a strategically planned experience designed to introduce new products or services to the market with maximum impact. It brings together industry experts, media, stakeholders, and potential customers to create excitement and build anticipation.
+          
+          <div className="conference-wt-50 conference-content">
 
-    These events feature live demonstrations, presentations, and interactive sessions that highlight the product’s unique features, benefits, and real-world applications. They serve as a powerful platform for brand storytelling, audience engagement, and market positioning.
+            <h4>Launching Products That Create Market Buzz</h4>
 
-    Product launch events help businesses create strong first impressions, generate buzz, and drive customer interest, ensuring a successful and memorable entry into the market.
-  </p>
-</div>
+            <p>
+              Our product launch events are designed to create excitement, build anticipation,
+              and introduce your products with maximum impact. We craft engaging launch
+              experiences that connect brands with customers, media, investors, and industry professionals.
+            </p>
 
-  </div>
+            <p>
+              From innovative stage presentations to immersive brand experiences, we ensure
+              every product launch reflects your vision, strengthens brand identity, and leaves
+              a memorable impression on your audience.
+            </p>
 
-</section>
+            <ul>
+              <li>Creative product unveiling and launch concepts</li>
+              <li>Professional stage setup, lighting, and sound</li>
+              <li>Live demonstrations and interactive experiences</li>
+              <li>Media coverage and audience engagement solutions</li>
+              <li>Branding, promotional displays, and digital presentations</li>
+              <li>End-to-end launch event planning and coordination</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+   
       <section>
         <Solutions imagelist={imagelist} />
       </section>
+
+
+      <section className="conference-section-1">
+
+        <div className="conference-inner">
+
+        
+          <div className="conference-wt-50 conference-img">
+            <img src={pro3} alt="Product Launch Event" />
+          </div>
+
+         
+          <div className="conference-wt-50 conference-content">
+
+            <h4>Creating Powerful Product Launch Experiences</h4>
+
+            <p>
+              We specialize in delivering impactful product launch events that help businesses
+              introduce their products with confidence and creativity. Our events are designed
+              to capture attention, increase visibility, and generate excitement in the market.
+            </p>
+
+            <p>
+              Through strategic planning and innovative event execution, we create launch
+              experiences that encourage audience interaction, strengthen customer engagement,
+              and maximize brand exposure.
+            </p>
+
+            <ul>
+              <li>Customized launch event themes and concepts</li>
+              <li>Product showcase and demonstration management</li>
+              <li>Audience engagement and interactive sessions</li>
+              <li>Corporate branding and promotional activities</li>
+              <li>Photography, videography, and live streaming support</li>
+              <li>Professional guest management and hospitality services</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section className="conference-section-1">
+
+        <div className="conference-inner">
+
+        
+          <div className="conference-wt-50 conference-content">
+
+            <h4>Transforming Product Launches Into Memorable Events</h4>
+
+            <p>
+              A successful product launch is more than just an introduction — it is an
+              opportunity to create excitement, inspire audiences, and build meaningful
+              connections with customers and stakeholders.
+            </p>
+
+            <p>
+              Our team focuses on delivering premium launch experiences that combine creativity,
+              innovation, and flawless execution to ensure your product stands out in today’s competitive market.
+            </p>
+
+            <ul>
+              <li>Elegant event décor and premium launch ambiance</li>
+              <li>Innovative presentation and reveal experiences</li>
+              <li>Strategic planning for maximum audience impact</li>
+              <li>Technology-driven product launch solutions</li>
+              <li>Smooth event coordination and execution</li>
+              <li>Complete event management from concept to completion</li>
+            </ul>
+
+          </div>
+
        
-  <section className="conference-section-1">
+          <div className="conference-wt-50 conference-img">
+            <img src={pro4} alt="Product Launch Event" />
+          </div>
 
-  <div className="conference-inner">
+        </div>
 
-    {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+      </section>
 
-    {/* CONTENT SIDE */}
-    <div className="conference-wt-50 conference-content">
-  <h4>Unveiling Ideas, Creating Impact</h4>
-  <p>
-    A product launch event is a dynamic platform designed to introduce innovative products and services to the audience in a compelling way. It brings together industry professionals, media, and customers to experience new offerings firsthand.
-
-    Through engaging presentations, live showcases, and interactive experiences, these events highlight the value, features, and vision behind the product. They create excitement, build brand awareness, and encourage audience interaction.
-
-    Product launch events play a key role in capturing market attention, strengthening brand identity, and driving successful product adoption.
-  </p>
-</div>
-
-  </div>
-
-</section>
-  <section className="conference-section-1">
-
-  <div className="conference-inner">
 
    
+      <section className="conference-box">
 
-    {/* CONTENT SIDE */}
-  <div className="conference-wt-50 conference-content">
-  <h4>Creating Experiences That Connect</h4>
-  <p>
-    Events are thoughtfully designed experiences that bring people together to share ideas, celebrate milestones, and build meaningful connections. Whether it’s a conference, product launch, seminar, or exhibition, each event serves a unique purpose in engaging audiences.
+        <div className="conference-box-inner">
 
-    With a blend of creativity, planning, and execution, events offer interactive sessions, presentations, and live experiences that leave a lasting impression. They provide opportunities to explore new perspectives, discover innovations, and connect with like-minded individuals.
+     
+          <div className="conference-box-img">
+            <img src={pro5} alt="Product Launch Event" />
+          </div>
 
-    Well-executed events not only deliver memorable experiences but also strengthen relationships, enhance brand value, and create lasting impact.
-  </p>
-</div>
-     {/* IMAGE SIDE */}
-    <div className="conference-wt-50 conference-img">
-      <img src={conference2} alt="Conference Event" />
-    </div>
+         
+          <div className="conference-box-content">
 
-  </div>
+            <h2>Why Choose Our Product Launch Services?</h2>
 
-</section>
+            <p>
+              We create exceptional product launch experiences that combine creativity,
+              strategic planning, and professional execution to ensure your brand makes a strong market impact.
+            </p>
 
-    <section className="conference-box">
+            <ul>
+              <li>Experienced team for premium product launch events</li>
+              <li>Customized launch strategies tailored to your brand</li>
+              <li>Creative stage design and audience engagement solutions</li>
+              <li>Advanced event technology and live presentation support</li>
+              <li>Professional coordination for smooth event execution</li>
+              <li>Memorable launch experiences that strengthen brand value</li>
+            </ul>
 
-  <div className="conference-box-inner">
+          </div>
 
-    {/* LEFT IMAGE */}
-    <div className="conference-box-img">
-      <img src={conference1} alt="Conference Event" />
-    </div>
+        </div>
 
-    {/* RIGHT CONTENT */}
-   <div className="conference-box-content">
-  <h2>Why Events Matter?</h2>
-
-  <p>
-    Events are thoughtfully organized experiences that bring people together to share ideas, celebrate achievements, and build strong connections.
-  </p>
-
-  <p>
-    They provide a dynamic platform for interaction, collaboration, and engagement across various industries and communities.
-  </p>
-
-  <p>
-    Events inspire growth by offering new perspectives, real-world insights, and opportunities to connect with the latest trends and innovations.
-  </p>
-</div>
-
-  </div>
-
-</section>
+      </section>
 
     </div>
-
   );
 }

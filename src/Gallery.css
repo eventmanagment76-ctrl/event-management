@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0b0b0b;
+  font-family:'Poppins',sans-serif;
+}
+
+
+
+.gallery-section-new{
+  width:100%;
+  padding:80px 7%;
+  background:
+  linear-gradient(to bottom,#111,#0b0b0b);
+}
+
+
+.gallery-header-new{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.gallery-header-new h1{
+  font-size:3rem;
+  color:#fff;
+  margin-bottom:15px;
+  font-weight:700;
+}
+
+.gallery-header-new p{
+  color:#cfcfcf;
+  font-size:1rem;
+  line-height:1.8;
+  max-width:700px;
+  margin:auto;
+}
+
+
+
+.gallery-grid-new{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(260px,1fr));
+
+  gap:22px;
+}
+
+
+
+.gallery-card-new{
+  position:relative;
+  overflow:hidden;
+  border-radius:22px;
+  cursor:pointer;
+
+  background:#111;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.45);
+
+  transition:0.4s ease;
+}
+
+
+
+.gallery-card-new img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+  transition:0.5s ease;
+}
+
+
+
+.gallery-card-new:hover{
+  transform:translateY(-8px);
+}
+
+.gallery-card-new:hover img{
+  transform:scale(1.1);
+}
+
+
+
+.gallery-overlay-new{
+  position:absolute;
+  inset:0;
+
+  background:
+  linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.1)
+  );
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  padding:20px;
+
+  opacity:0;
+  transition:0.4s ease;
+}
+
+.gallery-card-new:hover .gallery-overlay-new{
+  opacity:1;
+}
+
+.gallery-overlay-new h3{
+  color:#fff;
+  font-size:1.2rem;
+  margin-bottom:6px;
+}
+
+.gallery-overlay-new p{
+  color:#ddd;
+  font-size:0.92rem;
+}
+
+
+
+@media(max-width:992px){
+
+  .gallery-header-new h1{
+    font-size:2.4rem;
+  }
+
+  .gallery-card-new img{
+    height:230px;
+  }
+
+}
+
+
+@media(max-width:768px){
+
+  .gallery-section-new{
+    padding:60px 5%;
+  }
+
+  .gallery-header-new h1{
+    font-size:2rem;
+  }
+
+  .gallery-header-new p{
+    font-size:0.95rem;
+  }
+
+  .gallery-grid-new{
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:16px;
+  }
+
+  .gallery-card-new img{
+    height:190px;
+  }
+
+}
+
+
+
+@media(max-width:480px){
+
+  .gallery-grid-new{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-card-new img{
+    height:220px;
+  }
+
+  .gallery-header-new h1{
+    font-size:1.7rem;
+  }
+
+}

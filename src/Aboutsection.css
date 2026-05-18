@@ -11,7 +11,6 @@ body{
   background:#111;
 }
 
-/* SECTION */
 .about-section{
   width:100%;
 
@@ -33,7 +32,6 @@ body{
   position:relative;
 }
 
-/* LIGHT OVERLAY */
 .about-section::before{
   content:"";
   position:absolute;
@@ -51,7 +49,6 @@ body{
   pointer-events:none;
 }
 
-/* CONTAINER */
 .about-container{
   max-width:1180px;
   margin:auto;
@@ -66,20 +63,18 @@ body{
   z-index:2;
 }
 
-/* LEFT */
 .about-left{
   flex:1;
   max-width:500px;
 }
 
 .small-title{
-  color:#ff6a2f;
+  color:#f4eded;
   font-size:13px;
   font-weight:700;
   letter-spacing:3px;
 }
 
-/* HEADING */
 .about-left h1{
   font-size:58px;
   line-height:1.02;
@@ -89,7 +84,6 @@ body{
   font-weight:800;
 }
 
-/* PARAGRAPH */
 .about-left p{
   font-size:15px;
   line-height:1.9;
@@ -98,38 +92,40 @@ body{
   margin-bottom:24px;
 }
 
-/* BUTTON */
-.about-left button{
-  background:linear-gradient(
-  90deg,
-  #ff6a2f,
-  #ff2f63
-  );
 
-  color:white;
-  border:none;
+button {
+  background: linear-gradient(135deg, #ff0000, #b30000);
+  border: none;
+  padding: 16px 38px;
+  border-radius: 50px;
+  cursor: pointer;
 
-  padding:14px 32px;
-  border-radius:14px;
+  transition: all 0.4s ease;
 
-  font-size:16px;
-  font-weight:700;
-
-  cursor:pointer;
-
-  transition:
-  transform .35s ease,
-  box-shadow .35s ease;
+  box-shadow: 0 10px 25px rgba(13, 13, 13, 0.35);
 }
 
-.about-left button:hover{
-  transform:translateY(-4px);
+button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 
-  box-shadow:
-  0 12px 25px rgba(255,82,43,0.25);
+  transition: all 0.4s ease;
 }
 
-/* RIGHT */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+
+  background: linear-gradient(135deg, #ff1a1a, #ff4d4d);
+
+  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.5);
+}
+
+button:hover a {
+  color: #00d9ff;
+}
 .about-right{
   flex:1;
   position:relative;
@@ -137,7 +133,6 @@ body{
   min-height:560px;
 }
 
-/* CENTER CIRCLE */
 .circle-bg{
   position:absolute;
 
@@ -159,7 +154,6 @@ body{
   0 0 70px rgba(255,145,77,0.08);
 }
 
-/* CARD */
 .info-card{
   position:absolute;
 
@@ -184,7 +178,6 @@ body{
   box-shadow:
   0 10px 35px rgba(0,0,0,0.20);
 
-  /* ENTRY ANIMATION */
   opacity:0;
 
   animation-duration:1.2s;
@@ -197,7 +190,6 @@ body{
   border .35s ease;
 }
 
-/* SHINY EFFECT */
 .info-card::before{
   content:"";
   position:absolute;
@@ -222,7 +214,6 @@ body{
   left:130%;
 }
 
-/* HOVER EFFECT */
 .info-card:hover{
   transform:translateY(-8px) scale(1.02);
 
@@ -232,7 +223,6 @@ body{
   0 18px 35px rgba(0,0,0,0.30);
 }
 
-/* CARD POSITIONS + DELAY */
 .card-0{
   top:0;
   left:0;
@@ -259,29 +249,26 @@ body{
   animation-delay:0.8s;
 }
 
-/* ICON */
 .icon{
   font-size:22px;
   color:#ff3b30;
   margin-bottom:14px;
 }
 
-/* CARD TITLE */
 .info-card h3{
-  font-size:20px;
+  font-size:25px;
   margin-bottom:14px;
   line-height:1.3;
-  color:rgb(248, 10, 10);
+  color:rgb(250, 244, 244);
+  font-weight: 600;
 }
 
-/* CARD TEXT */
 .info-card p{
   font-size:14px;
   line-height:1.8;
   color:#ededed;
 }
 
-/* LEFT TO RIGHT */
 @keyframes slideLeft{
 
   from{
@@ -295,7 +282,6 @@ body{
   }
 }
 
-/* RIGHT TO LEFT */
 @keyframes slideRight{
 
   from{
@@ -309,7 +295,6 @@ body{
   }
 }
 
-/* BOTTOM TO TOP */
 @keyframes slideBottom{
 
   from{
@@ -323,7 +308,6 @@ body{
   }
 }
 
-/* TABLET */
 @media(max-width:992px){
 
   .about-section{
@@ -377,7 +361,6 @@ body{
   }
 }
 
-/* MOBILE */
 @media(max-width:576px){
 
   .about-section{

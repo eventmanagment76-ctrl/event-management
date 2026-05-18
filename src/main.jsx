@@ -43,10 +43,10 @@ function Root() {
 
         <Route path="/" element={<App />}>
 
-          {/* DEFAULT */}
+        
           <Route index element={<Home />} />
 
-          {/* MAIN */}
+         
           <Route path="home" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
@@ -54,7 +54,7 @@ function Root() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
 
-          {/* BLOGS */}
+         
           <Route path="blog1" element={<Blog1 />} />
           <Route path="blog2" element={<Blog2 />} />
           <Route path="blog3" element={<Blog3 />} />
@@ -65,7 +65,7 @@ function Root() {
           <Route path="blog8" element={<Blog8 />} />
           <Route path="blog9" element={<Blog9 />} />
 
-          {/* SERVICES (MATCH NAVBAR LINKS) */}
+          
           <Route path="services/Corporate" element={<Corporate />} />
           <Route path="services/Conference" element={<Conference />} />
           <Route path="services/product" element={<Product />} />

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Orbitabout.css";
-import orbit1 from "../src/assets/orbit1.jpg";
-import orbit2 from "../src/assets/orbit2.jpg";
+import b6 from "../src/assets/b6.jpeg";
+import d7 from "../src/assets/d7.jpeg";
 
 export default function Why() {
 
@@ -20,12 +20,12 @@ export default function Why() {
   }, []);
 
   const data = [
-    "6+ years experience",
+    "8+ years experience",
     "Nationwide vendor network",
     "500+ successful events",
     "Creative production teams",
     "Award winning company",
-    "4.9★ Google rating"
+    "5★ Google rating"
   ];
 
   return (
@@ -33,33 +33,31 @@ export default function Why() {
 
       <div className="why-container">
 
-        {/* IMAGE SECTION */}
         <div className="why-image fade-up">
 
           <img
             className="main-img"
-            src={orbit1}
+            src={b6}
             alt="event"
           />
 
           <img
             className="decor-img"
-            src={orbit2}
+            src={d7}
             alt="event"
           />
 
         </div>
 
-        {/* CONTENT SECTION */}
         <div className="why-content">
 
           <h1 className="fade-up">
-            Why Orbit Events is a{" "}
-            <span>Leading Corporate Event Organizer</span>
+            Why Orbit Events and Experiences 
+            <span>Leading Event Organizer</span>
           </h1>
 
           <p className="fade-up">
-            Orbit Events is a premier corporate event management company
+            Orbit Events is a premier event management company
             delivering unforgettable experiences across India with
             professional planning, creative design and seamless execution.
           </p>
